@@ -64,3 +64,66 @@ Google/Naver/AI search for 대표키워드 OR 서브키워드 = must show on pag
 - NEVER use fake phone numbers! NEVER use placeholder data! Only REAL advertiser phone numbers! No number = leave empty!
 - Auto page transition. Next.js. Change URLs
 - Brand path. Stuffing. Fake properties. Completed sales
+
+## ★★★ 2026년 4월 기준 실제 분양 현장만! 가짜 금지! ★★★
+Search Google/Naver for latest info. Below is starting data.
+VERIFY each property is still active before using!
+
+### 1. 아파트분양 2026
+Search: "아파트분양 2026" "아파트 청약 일정 2026" "아파트 분양 예정" on Google/Naver
+Sources: 청약홈(applyhome.co.kr), 호갱노노, 분양알리미, 부동산114, 직방
+Add ONLY currently selling/upcoming apartment projects!
+- 서울원아이파크 (서울)
+- 오티에르반포 (서울 서초구)
+- 더샵신길센트럴시티 (서울 영등포구)
+- 래미안엘라비네 (서울)
+- 더샵프리엘라 (서울)
+- 아크로드서초 (서울 서초구)
+- 라클라체자이드파인 (서울) 2026년 4월 분양예정
+- 아크로리버스카이 (서울) 2026년 4월 분양예정
+- 공덕역자이르네 (서울) 2026년 4월 분양예정
+- 장위푸르지오마크원 (서울) 2026년 4월 분양예정
+- 써밋더힐 (서울) 2026년 4월 분양예정
+- 덕수궁롯데캐슬136 (서울) 2026년 4월 분양예정
+- 한화포레나부산당리 (부산 사하구)
+- 창원자이더스카이 (경남 창원시)
+- 시흥거모호반써밋B1 (경기 시흥시)
+- 해링턴플레이스오룡역 (대전 중구)
+
+#### 1-1. 아파트분양 검색어
+Search these on Google/Naver to find MORE apartments:
+"아파트분양 2026" / "아파트 청약 일정 2026" / "아파트 분양 예정"
+"서울 아파트분양" / "경기 아파트분양" / "부산 아파트분양"
+"일산 아파트분양" / "수원 아파트분양" / "인천 아파트분양"
+Sources: 청약홈 applyhome.co.kr / 호갱노노 hogangnono.com / 분양알리미 bunyangi.com
+Add ALL currently selling or upcoming apartments!
+
+### 2. 오피스텔분양 2026
+Search: "오피스텔분양 2026" on Google/Naver
+Sources: 청약홈, 부동산114, 직방
+Add ONLY currently selling/upcoming officetel projects
+
+### 3. 상가분양 2026
+Search: "상가분양 2026" on Google/Naver
+Add ONLY currently selling commercial properties
+Focus: station area, new town commercial zones
+
+### 4. 지식산업센터분양 2026
+Search: "지식산업센터분양 2026" on Google/Naver
+Sources: 산업부동산, 부동산114
+Focus: Gyeonggi, Seoul industrial zones
+
+### 5. 토지분양 2026
+Search: "토지분양 2026" "토지매각 2026" on Google/Naver
+Sources: LH, SH, local government land sales
+
+### 6. 산업단지분양 2026
+Search: "산업단지분양 2026" "산업단지 입주기업 모집" on Google/Naver
+Sources: 한국산업단지공단, local government
+
+### [Property Data Rules]
+- 분양완료/입주완료 = DELETE! Only 분양중/청약예정!
+- Verify EACH property by searching its name on Google
+- If search shows no result = DELETE (fake!)
+- Update with latest data from 청약홈/분양알리미/부동산114/직방/호갱노노
+- Add: property name, location, type, status, units, price range
