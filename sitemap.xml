@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>/apt.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/officetel.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/commercial.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/knowledge.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/land.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/industrial.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>/detail/seoul-one-ipark.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/hauterre-banpo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/thesharp-singil.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/raemian-ellavine.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/thesharp-freella.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/acrod-seocho.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/laclache-xi-defyne.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/gongdeok-xi-rene.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/jangwi-prugio-markone.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/hanwha-forena-dangri.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/changwon-xi-thesky.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/detail/siheung-hoban-summit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+</urlset>
