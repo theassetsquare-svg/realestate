@@ -44,6 +44,89 @@
     <h3>장위푸르지오마크원 실거주 환경</h3>
     <p>장위푸르지오마크원 단지 인근에는 초·중·고등학교가 밀집해 있어 자녀 교육 환경이 우수합니다. 장위근린공원, 북서울꿈의숲 등 대형 녹지공간이 가까워 쾌적한 주거 환경을 제공합니다. 장위푸르지오마크원은 대단지 특유의 커뮤니티 시설(피트니스, 독서실, 어린이집)이 계획되어 있으며, 단지 내 상업시설도 조성되어 생활 편의성이 높습니다. 성북구 아파트분양 시장에서 장위뉴타운은 가장 주목받는 개발 지역이며, 장위푸르지오마크원은 그 중심에 있습니다.</p>
 
+    <!-- Price Simulator -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🧮</span> 장위푸르지오마크원 월 납입금 계산기</div>
+      <div class="calc-grid">
+        <div class="calc-field"><label>분양가 (만원)</label><input type="number" id="calcPrice" placeholder="예: 80000" value="80000"></div>
+        <div class="calc-field"><label>자기자금 비율 (%)</label><input type="number" id="calcDown" value="30"></div>
+        <div class="calc-field"><label>대출 금리 (%)</label><input type="number" id="calcRate" value="3.5" step="0.1"></div>
+        <div class="calc-field"><label>대출 기간 (년)</label><select id="calcYears"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div>
+      </div>
+      <button class="calc-btn" id="calcBtn">월 납입금 계산하기</button>
+      <div class="calc-result" id="calcResult"><div class="amount"></div><div class="detail"></div></div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📊</span> 장위푸르지오마크원 vs 주변 현장 비교</div>
+      <div class="compare-scroll">
+        <table class="compare-table">
+          <tr><th>항목</th><th class="highlight">장위푸르지오마크원</th><th>공덕역자이르네</th><th>더샵신길센트럴시티</th></tr>
+          <tr><td>위치</td><td class="highlight">서울 성북구 장위동</td><td>서울 마포구 공덕동</td><td>서울 영등포구 신길동</td></tr>
+          <tr><td>시공사</td><td class="highlight">대우건설</td><td>GS건설</td><td>포스코이앤씨</td></tr>
+          <tr><td>규모</td><td class="highlight">수천 세대 대단지</td><td>역세권 단지</td><td>대단지</td></tr>
+          <tr><td>교통</td><td class="highlight">6호선·동북선 경전철</td><td>쿼드러플 역세권</td><td>1호선·5호선 신길역</td></tr>
+          <tr><td>특징</td><td class="highlight">장위뉴타운 최대 규모</td><td>4개 노선 교차</td><td>여의도 한 정거장</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📅</span> 분양 → 입주까지 타임라인</div>
+      <div class="timeline">
+        <div class="timeline-item active"><div class="timeline-date">2026년 4월</div><div class="timeline-text">분양 공고 · 모델하우스 오픈</div><div class="timeline-sub">입주자 모집공고 확인, 현장 방문</div></div>
+        <div class="timeline-item active"><div class="timeline-date">2026년 4~5월</div><div class="timeline-text">청약 접수 · 당첨자 발표</div><div class="timeline-sub">특별공급 → 1순위 → 2순위 순서</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026년 5~6월</div><div class="timeline-text">정당 계약</div><div class="timeline-sub">계약금 납부 (분양가의 10~20%)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026~2028년</div><div class="timeline-text">공사 진행 · 중도금 납부</div><div class="timeline-sub">6회 분할 납부 (대출 가능)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2028~2029년 (예정)</div><div class="timeline-text">입주 · 잔금 납부</div><div class="timeline-sub">잔금 납부 후 입주, 등기 이전</div></div>
+      </div>
+    </div>
+
+    <!-- Neighborhood -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🗺️</span> 장위푸르지오마크원 주변 인프라</div>
+      <div class="infra-grid">
+        <div class="infra-item"><div class="infra-icon">🚇</div><div class="infra-name">돌곶이역 (6호선)</div><div class="infra-dist">도보 8분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏫</div><div class="infra-name">장위초등학교</div><div class="infra-dist">도보 5분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏥</div><div class="infra-name">경희의료원</div><div class="infra-dist">차량 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🛒</div><div class="infra-name">이마트 월계점</div><div class="infra-dist">차량 7분</div></div>
+        <div class="infra-item"><div class="infra-icon">🌳</div><div class="infra-name">북서울꿈의숲</div><div class="infra-dist">도보 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏞️</div><div class="infra-name">장위근린공원</div><div class="infra-dist">도보 5분</div></div>
+      </div>
+    </div>
+
+    <!-- Expert Quote -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">💬</span> 전문가가 본 장위푸르지오마크원의 가치</div>
+      <div class="expert-quote">
+        <p>장위푸르지오마크원은 장위뉴타운 재개발의 최대 규모 단지로, 대단지 특유의 자족적 생활 인프라와 커뮤니티 시설이 가장 큰 강점입니다. 동북선 경전철 개통 시 강남까지 30분 이내 접근이 가능해져 교통 프리미엄이 극대화될 전망입니다. 대우건설 푸르지오 마크원 최상위 라인업의 품질과 성북구 합리적 가격대가 결합되어 실수요자에게 가성비 높은 선택지입니다.</p>
+        <div class="expert-name">— 더에셋스퀘어 부동산 분석팀</div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">❓</span> 장위푸르지오마크원 자주 묻는 질문</div>
+      <div class="faq-item"><button class="faq-q">장위푸르지오마크원 청약 자격은 어떻게 되나요?</button><div class="faq-a">장위푸르지오마크원은 서울 성북구 소재 단지로, 서울·수도권 거주자가 1순위 청약 가능합니다. 대단지로 물량이 많아 당첨 확률이 상대적으로 높을 수 있습니다.</div></div>
+      <div class="faq-item"><button class="faq-q">장위푸르지오마크원 분양가는 어느 정도인가요?</button><div class="faq-a">장위푸르지오마크원의 분양가는 성북구 장위뉴타운 시세를 반영하되, 서울 강남권 대비 합리적인 수준으로 책정될 전망입니다. 정확한 분양가는 모집공고 시 확정됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">입주 예정 시기는 언제인가요?</button><div class="faq-a">장위푸르지오마크원의 입주 예정 시기는 분양 후 2~3년이며, 정확한 시기는 시행사 공지를 확인하세요.</div></div>
+      <div class="faq-item"><button class="faq-q">중도금 대출은 가능한가요?</button><div class="faq-a">중도금 대출은 시행사와 협약된 금융기관을 통해 분양가의 60%까지 가능합니다. 대단지 특성상 안정적인 중도금 대출 조건이 제공될 것으로 예상되며, 구체적 조건은 계약 시 안내됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">동북선 경전철 개통 시기는 언제인가요?</button><div class="faq-a">동북선 경전철은 현재 공사가 진행 중이며, 개통 시 장위푸르지오마크원에서 강남까지 환승 한 번으로 30분 이내 접근이 가능해집니다. 정확한 개통 시기는 서울시 발표를 참고하시기 바랍니다.</div></div>
+    </div>
+
+    <!-- Alert -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🔔</span> 장위푸르지오마크원 가격 변동 알림</div>
+      <p style="font-size:0.9rem;color:#666;margin-bottom:12px;">이메일을 등록하면 분양가 변동, 청약 일정 등 최신 소식을 알려드립니다.</p>
+      <div class="alert-box">
+        <input type="email" id="alertEmail" placeholder="이메일 주소 입력">
+        <button id="alertBtn">알림 등록</button>
+      </div>
+      <div class="alert-msg" id="alertMsg"></div>
+    </div>
+
     <div class="detail-sidebar">
       <h3>관련 아파트분양 현장</h3>
       <ul class="related-list">

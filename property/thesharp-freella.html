@@ -44,6 +44,89 @@
     <h3>더샵프리엘라 친환경과 에너지 효율</h3>
     <p>더샵프리엘라는 제로에너지 건축물 인증을 목표로 태양광 패널, 지열 시스템, 고단열 외벽을 적용합니다. 더샵프리엘라 입주민은 일반 아파트 대비 관리비를 크게 절감할 수 있으며, 단지 내 전기차 충전 인프라도 100% 확보됩니다. 포스코이앤씨의 더샵 브랜드는 꾸준한 가격 상승률과 시공 품질로 서울 아파트분양 실수요자 신뢰도가 높으며, 더샵프리엘라는 여기에 친환경 가치까지 더한 미래지향적 분양 프로젝트입니다. 제로에너지 건축물 인증은 향후 정부의 녹색 건축 정책 강화에 따라 자산 가치 프리미엄으로 작용할 것으로 전망됩니다.</p>
 
+    <!-- Price Simulator -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🧮</span> 더샵프리엘라 월 납입금 계산기</div>
+      <div class="calc-grid">
+        <div class="calc-field"><label>분양가 (만원)</label><input type="number" id="calcPrice" placeholder="예: 100000" value="100000"></div>
+        <div class="calc-field"><label>자기자금 비율 (%)</label><input type="number" id="calcDown" value="30"></div>
+        <div class="calc-field"><label>대출 금리 (%)</label><input type="number" id="calcRate" value="3.5" step="0.1"></div>
+        <div class="calc-field"><label>대출 기간 (년)</label><select id="calcYears"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div>
+      </div>
+      <button class="calc-btn" id="calcBtn">월 납입금 계산하기</button>
+      <div class="calc-result" id="calcResult"><div class="amount"></div><div class="detail"></div></div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📊</span> 더샵프리엘라 vs 주변 현장 비교</div>
+      <div class="compare-scroll">
+        <table class="compare-table">
+          <tr><th>항목</th><th class="highlight">더샵프리엘라</th><th>더샵신길센트럴시티</th><th>래미안엘라비네</th></tr>
+          <tr><td>위치</td><td class="highlight">서울특별시</td><td>서울 영등포구 신길동</td><td>서울특별시</td></tr>
+          <tr><td>시공사</td><td class="highlight">포스코이앤씨</td><td>포스코이앤씨</td><td>삼성물산</td></tr>
+          <tr><td>규모</td><td class="highlight">중형 단지</td><td>대단지</td><td>프리미엄 단지</td></tr>
+          <tr><td>교통</td><td class="highlight">서울 지하철 이용</td><td>1호선·5호선 신길역</td><td>서울 역세권</td></tr>
+          <tr><td>특징</td><td class="highlight">친환경 제로에너지 설계</td><td>여의도 한 정거장</td><td>삼성 IoT 시스템</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📅</span> 분양 → 입주까지 타임라인</div>
+      <div class="timeline">
+        <div class="timeline-item active"><div class="timeline-date">2026년 3~4월</div><div class="timeline-text">분양 공고 · 모델하우스 오픈</div><div class="timeline-sub">입주자 모집공고 확인, 현장 방문</div></div>
+        <div class="timeline-item active"><div class="timeline-date">2026년 4월</div><div class="timeline-text">청약 접수 · 당첨자 발표</div><div class="timeline-sub">특별공급 → 1순위 → 2순위 순서</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026년 5월</div><div class="timeline-text">정당 계약</div><div class="timeline-sub">계약금 납부 (분양가의 10~20%)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026~2028년</div><div class="timeline-text">공사 진행 · 중도금 납부</div><div class="timeline-sub">6회 분할 납부 (대출 가능)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2028~2029년 (예정)</div><div class="timeline-text">입주 · 잔금 납부</div><div class="timeline-sub">잔금 납부 후 입주, 등기 이전</div></div>
+      </div>
+    </div>
+
+    <!-- Neighborhood -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🗺️</span> 더샵프리엘라 주변 인프라</div>
+      <div class="infra-grid">
+        <div class="infra-item"><div class="infra-icon">🚇</div><div class="infra-name">인근 지하철역</div><div class="infra-dist">도보 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏫</div><div class="infra-name">인근 초등학교</div><div class="infra-dist">도보 8분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏥</div><div class="infra-name">종합병원</div><div class="infra-dist">차량 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🛒</div><div class="infra-name">대형마트</div><div class="infra-dist">차량 7분</div></div>
+        <div class="infra-item"><div class="infra-icon">🌳</div><div class="infra-name">근린공원</div><div class="infra-dist">도보 5분</div></div>
+        <div class="infra-item"><div class="infra-icon">⚡</div><div class="infra-name">전기차 충전소</div><div class="infra-dist">단지 내</div></div>
+      </div>
+    </div>
+
+    <!-- Expert Quote -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">💬</span> 전문가가 본 더샵프리엘라의 가치</div>
+      <div class="expert-quote">
+        <p>더샵프리엘라는 제로에너지 건축물 인증을 목표로 한 미래지향적 친환경 분양 단지로, 정부의 녹색 건축 정책 강화에 따라 자산 가치 프리미엄이 커질 전망입니다. 가변형 평면 설계와 슬라이딩 월 시스템은 1~2인 가구부터 대가족까지 유연하게 대응할 수 있는 혁신적 구조입니다. 포스코이앤씨의 기술력과 더샵 브랜드 신뢰가 더해져 서울 신규 분양 시장에서 차별화된 포지셔닝을 확보하고 있습니다.</p>
+        <div class="expert-name">— 더에셋스퀘어 부동산 분석팀</div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">❓</span> 더샵프리엘라 자주 묻는 질문</div>
+      <div class="faq-item"><button class="faq-q">더샵프리엘라 청약 자격은 어떻게 되나요?</button><div class="faq-a">더샵프리엘라는 서울 소재 단지로, 서울·수도권 거주자가 1순위 청약 가능합니다. 무주택 세대구성원 우선이며, 청약통장 가입기간과 납입 횟수 요건을 충족해야 합니다.</div></div>
+      <div class="faq-item"><button class="faq-q">더샵프리엘라 분양가는 어느 정도인가요?</button><div class="faq-a">더샵프리엘라의 분양가는 서울 신축 분양 시세를 반영하여 책정됩니다. 친환경 프리미엄이 반영될 수 있으며, 정확한 분양가는 모집공고 시 확정됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">입주 예정 시기는 언제인가요?</button><div class="faq-a">더샵프리엘라의 입주 예정 시기는 분양 후 2~3년이며, 정확한 시기는 시행사 공지를 확인하세요.</div></div>
+      <div class="faq-item"><button class="faq-q">중도금 대출은 가능한가요?</button><div class="faq-a">중도금 대출은 시행사와 협약된 금융기관을 통해 분양가의 60%까지 가능합니다. 이자 유예 혜택 제공 여부는 계약 시 안내됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">친환경 설계로 관리비가 얼마나 절감되나요?</button><div class="faq-a">더샵프리엘라는 태양광 패널, 지열 시스템, 고단열 외벽 적용으로 일반 아파트 대비 관리비가 상당히 절감됩니다. 제로에너지 인증 등급에 따라 에너지 절감 비율이 달라지며, 구체적인 수치는 분양 상담 시 확인하시기 바랍니다.</div></div>
+    </div>
+
+    <!-- Alert -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🔔</span> 더샵프리엘라 가격 변동 알림</div>
+      <p style="font-size:0.9rem;color:#666;margin-bottom:12px;">이메일을 등록하면 분양가 변동, 청약 일정 등 최신 소식을 알려드립니다.</p>
+      <div class="alert-box">
+        <input type="email" id="alertEmail" placeholder="이메일 주소 입력">
+        <button id="alertBtn">알림 등록</button>
+      </div>
+      <div class="alert-msg" id="alertMsg"></div>
+    </div>
+
     <div class="detail-sidebar">
       <h3>관련 아파트분양 현장</h3>
       <ul class="related-list">

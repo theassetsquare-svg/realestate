@@ -52,6 +52,89 @@
     <h3>래미안엘라비네 커뮤니티와 조경</h3>
     <p>래미안엘라비네 단지 내에는 피트니스센터, 게스트하우스, 독서실, 키즈카페, 시니어라운지 등 세대별 맞춤형 커뮤니티 시설이 대거 계획되어 있습니다. 래미안엘라비네의 조경은 중앙광장을 중심으로 산책로, 텃밭, 놀이터가 유기적으로 연결되어 단지 내에서 자연을 일상적으로 누릴 수 있도록 설계했습니다. 래미안엘라비네는 삼성물산 래미안 브랜드의 높은 인지도와 안정적인 시공 품질로 서울 아파트분양 실수요자들의 높은 신뢰를 받고 있습니다.</p>
 
+    <!-- Price Simulator -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🧮</span> 래미안엘라비네 월 납입금 계산기</div>
+      <div class="calc-grid">
+        <div class="calc-field"><label>분양가 (만원)</label><input type="number" id="calcPrice" placeholder="예: 130000" value="130000"></div>
+        <div class="calc-field"><label>자기자금 비율 (%)</label><input type="number" id="calcDown" value="30"></div>
+        <div class="calc-field"><label>대출 금리 (%)</label><input type="number" id="calcRate" value="3.5" step="0.1"></div>
+        <div class="calc-field"><label>대출 기간 (년)</label><select id="calcYears"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div>
+      </div>
+      <button class="calc-btn" id="calcBtn">월 납입금 계산하기</button>
+      <div class="calc-result" id="calcResult"><div class="amount"></div><div class="detail"></div></div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📊</span> 래미안엘라비네 vs 주변 현장 비교</div>
+      <div class="compare-scroll">
+        <table class="compare-table">
+          <tr><th>항목</th><th class="highlight">래미안엘라비네</th><th>오티에르반포</th><th>라클라체자이드파인</th></tr>
+          <tr><td>위치</td><td class="highlight">서울특별시</td><td>서울 서초구 반포동</td><td>서울특별시</td></tr>
+          <tr><td>시공사</td><td class="highlight">삼성물산</td><td>-</td><td>GS건설</td></tr>
+          <tr><td>규모</td><td class="highlight">프리미엄 단지</td><td>86세대</td><td>프리미엄 단지</td></tr>
+          <tr><td>교통</td><td class="highlight">서울 역세권</td><td>서초구청역 도보</td><td>강남 접근 우수</td></tr>
+          <tr><td>특징</td><td class="highlight">삼성 스마트싱스 IoT</td><td>한강 직접 조망</td><td>자이 드파인 최상위</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📅</span> 분양 → 입주까지 타임라인</div>
+      <div class="timeline">
+        <div class="timeline-item active"><div class="timeline-date">2026년 3~4월</div><div class="timeline-text">분양 공고 · 모델하우스 오픈</div><div class="timeline-sub">입주자 모집공고 확인, 현장 방문</div></div>
+        <div class="timeline-item active"><div class="timeline-date">2026년 4월</div><div class="timeline-text">청약 접수 · 당첨자 발표</div><div class="timeline-sub">특별공급 → 1순위 → 2순위 순서</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026년 5월</div><div class="timeline-text">정당 계약</div><div class="timeline-sub">계약금 납부 (분양가의 10~20%)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026~2028년</div><div class="timeline-text">공사 진행 · 중도금 납부</div><div class="timeline-sub">6회 분할 납부 (대출 가능)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2028~2029년 (예정)</div><div class="timeline-text">입주 · 잔금 납부</div><div class="timeline-sub">잔금 납부 후 입주, 등기 이전</div></div>
+      </div>
+    </div>
+
+    <!-- Neighborhood -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🗺️</span> 래미안엘라비네 주변 인프라</div>
+      <div class="infra-grid">
+        <div class="infra-item"><div class="infra-icon">🚇</div><div class="infra-name">서울 지하철역</div><div class="infra-dist">도보 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏫</div><div class="infra-name">인근 초등학교</div><div class="infra-dist">도보 7분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏥</div><div class="infra-name">종합병원</div><div class="infra-dist">차량 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🛒</div><div class="infra-name">대형마트</div><div class="infra-dist">차량 5분</div></div>
+        <div class="infra-item"><div class="infra-icon">🌳</div><div class="infra-name">근린공원</div><div class="infra-dist">도보 5분</div></div>
+        <div class="infra-item"><div class="infra-icon">📚</div><div class="infra-name">공공도서관</div><div class="infra-dist">도보 8분</div></div>
+      </div>
+    </div>
+
+    <!-- Expert Quote -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">💬</span> 전문가가 본 래미안엘라비네의 가치</div>
+      <div class="expert-quote">
+        <p>래미안엘라비네는 삼성물산이 래미안 브랜드 30년 기술력을 집약한 차세대 프리미엄 주거 단지입니다. 전 세대에 적용된 삼성 스마트싱스 IoT 시스템은 다른 분양 현장과 확연히 차별화되는 핵심 경쟁력입니다. 래미안 브랜드의 높은 재구매율과 안정적 시세 유지력은 장기 보유 자산으로서 가장 안정적인 선택지임을 입증합니다.</p>
+        <div class="expert-name">— 더에셋스퀘어 부동산 분석팀</div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">❓</span> 래미안엘라비네 자주 묻는 질문</div>
+      <div class="faq-item"><button class="faq-q">래미안엘라비네 청약 자격은 어떻게 되나요?</button><div class="faq-a">래미안엘라비네는 서울 소재 단지로, 서울·수도권 거주자가 1순위 청약 가능합니다. 무주택 세대구성원이 우선이며, 가점제 비중이 높으므로 청약통장 가입기간과 부양가족 수를 확인하세요.</div></div>
+      <div class="faq-item"><button class="faq-q">래미안엘라비네 분양가는 어느 정도인가요?</button><div class="faq-a">래미안엘라비네의 분양가는 서울 프리미엄 분양 시장 수준으로 책정될 전망입니다. 정확한 분양가는 입주자 모집공고 시 확정되며, 분양 상담 전화(1666-6838)로 확인하시기 바랍니다.</div></div>
+      <div class="faq-item"><button class="faq-q">입주 예정 시기는 언제인가요?</button><div class="faq-a">래미안엘라비네의 입주 예정 시기는 통상 분양 후 2~3년이며, 정확한 입주 시기는 시행사 공지를 확인하세요.</div></div>
+      <div class="faq-item"><button class="faq-q">중도금 대출은 가능한가요?</button><div class="faq-a">중도금 대출은 시행사와 협약된 금융기관을 통해 분양가의 60%까지 가능합니다. 삼성물산 시공 단지는 안정적인 금융 조건이 제공되는 경우가 많으며, 구체적 조건은 계약 시 안내됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">전매 제한 기간은 얼마나 되나요?</button><div class="faq-a">서울 소재 단지로 투기과열지구 해당 시 소유권 이전 등기일까지 전매가 제한됩니다. 분양가 상한제 적용 여부에 따라 추가 제한이 있을 수 있으며, 정확한 조건은 모집공고를 확인하세요.</div></div>
+    </div>
+
+    <!-- Alert -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🔔</span> 래미안엘라비네 가격 변동 알림</div>
+      <p style="font-size:0.9rem;color:#666;margin-bottom:12px;">이메일을 등록하면 분양가 변동, 청약 일정 등 최신 소식을 알려드립니다.</p>
+      <div class="alert-box">
+        <input type="email" id="alertEmail" placeholder="이메일 주소 입력">
+        <button id="alertBtn">알림 등록</button>
+      </div>
+      <div class="alert-msg" id="alertMsg"></div>
+    </div>
+
     <div class="detail-sidebar">
       <h3>관련 아파트분양 현장</h3>
       <ul class="related-list">

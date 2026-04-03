@@ -44,6 +44,89 @@
     <h3>아크로리버스카이 아크로 브랜드 프리미엄</h3>
     <p>아크로리버스카이에 적용되는 아크로 브랜드는 DL이앤씨가 최고급 주거 시장을 위해 만든 프리미엄 라인입니다. 아크로리버스카이의 공용부와 로비는 호텔급 인테리어를 적용하며, 프라이빗 엘리베이터, 세대 현관 이중 보안 시스템, 발렛 서비스 등 차별화된 서비스를 제공합니다. 서울 아파트분양 중 이 수준의 서비스와 한강 조망을 동시에 갖춘 단지는 아크로리버스카이가 유일합니다.</p>
 
+    <!-- Price Simulator -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🧮</span> 아크로리버스카이 월 납입금 계산기</div>
+      <div class="calc-grid">
+        <div class="calc-field"><label>분양가 (만원)</label><input type="number" id="calcPrice" placeholder="예: 170000" value="170000"></div>
+        <div class="calc-field"><label>자기자금 비율 (%)</label><input type="number" id="calcDown" value="30"></div>
+        <div class="calc-field"><label>대출 금리 (%)</label><input type="number" id="calcRate" value="3.5" step="0.1"></div>
+        <div class="calc-field"><label>대출 기간 (년)</label><select id="calcYears"><option value="20">20년</option><option value="30" selected>30년</option><option value="40">40년</option></select></div>
+      </div>
+      <button class="calc-btn" id="calcBtn">월 납입금 계산하기</button>
+      <div class="calc-result" id="calcResult"><div class="amount"></div><div class="detail"></div></div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📊</span> 아크로리버스카이 vs 주변 현장 비교</div>
+      <div class="compare-scroll">
+        <table class="compare-table">
+          <tr><th>항목</th><th class="highlight">아크로리버스카이</th><th>오티에르반포</th><th>이촌 르엘</th></tr>
+          <tr><td>위치</td><td class="highlight">서울 한강변</td><td>서울 서초구 반포동</td><td>서울 용산구 이촌동</td></tr>
+          <tr><td>시공사</td><td class="highlight">DL이앤씨</td><td>-</td><td>롯데건설</td></tr>
+          <tr><td>규모</td><td class="highlight">프리미엄 단지</td><td>86세대</td><td>750세대(일반88)</td></tr>
+          <tr><td>교통</td><td class="highlight">한강변 역세권</td><td>서초구청역 도보</td><td>4호선 이촌역</td></tr>
+          <tr><td>특징</td><td class="highlight">전 세대 한강 조망</td><td>한강 직접 조망</td><td>분양가상한제 로또</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">📅</span> 분양 → 입주까지 타임라인</div>
+      <div class="timeline">
+        <div class="timeline-item active"><div class="timeline-date">2026년 4월</div><div class="timeline-text">분양 공고 · 모델하우스 오픈</div><div class="timeline-sub">입주자 모집공고 확인, 현장 방문</div></div>
+        <div class="timeline-item active"><div class="timeline-date">2026년 4~5월</div><div class="timeline-text">청약 접수 · 당첨자 발표</div><div class="timeline-sub">특별공급 → 1순위 → 2순위 순서</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026년 5~6월</div><div class="timeline-text">정당 계약</div><div class="timeline-sub">계약금 납부 (분양가의 10~20%)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2026~2029년</div><div class="timeline-text">공사 진행 · 중도금 납부</div><div class="timeline-sub">6회 분할 납부 (대출 가능)</div></div>
+        <div class="timeline-item"><div class="timeline-date">2029년 (예정)</div><div class="timeline-text">입주 · 잔금 납부</div><div class="timeline-sub">잔금 납부 후 입주, 등기 이전</div></div>
+      </div>
+    </div>
+
+    <!-- Neighborhood -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🗺️</span> 아크로리버스카이 주변 인프라</div>
+      <div class="infra-grid">
+        <div class="infra-item"><div class="infra-icon">🚇</div><div class="infra-name">인근 지하철역</div><div class="infra-dist">도보 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏫</div><div class="infra-name">인근 초등학교</div><div class="infra-dist">도보 8분</div></div>
+        <div class="infra-item"><div class="infra-icon">🏥</div><div class="infra-name">종합병원</div><div class="infra-dist">차량 10분</div></div>
+        <div class="infra-item"><div class="infra-icon">🌳</div><div class="infra-name">한강공원</div><div class="infra-dist">도보 3분</div></div>
+        <div class="infra-item"><div class="infra-icon">🛒</div><div class="infra-name">대형마트</div><div class="infra-dist">차량 7분</div></div>
+        <div class="infra-item"><div class="infra-icon">🚴</div><div class="infra-name">한강 자전거도로</div><div class="infra-dist">도보 2분</div></div>
+      </div>
+    </div>
+
+    <!-- Expert Quote -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">💬</span> 전문가가 본 아크로리버스카이의 가치</div>
+      <div class="expert-quote">
+        <p>아크로리버스카이는 전 세대 한강 조망이라는 절대적 강점으로 서울 분양 시장에서 독보적 위치를 점하고 있습니다. 한강변 신규 분양 공급 자체가 극히 제한적인 만큼, 아크로리버스카이의 희소가치는 시간이 갈수록 높아질 것입니다. DL이앤씨 아크로 브랜드의 호텔급 서비스와 프라이빗 엘리베이터는 하이엔드 주거의 새로운 기준을 제시합니다.</p>
+        <div class="expert-name">— 더에셋스퀘어 부동산 분석팀</div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">❓</span> 아크로리버스카이 자주 묻는 질문</div>
+      <div class="faq-item"><button class="faq-q">아크로리버스카이 청약 자격은 어떻게 되나요?</button><div class="faq-a">아크로리버스카이는 서울 소재 단지로, 서울·수도권 거주자가 1순위 청약 가능합니다. 한강 조망 프리미엄으로 경쟁률이 높을 것으로 예상되니 청약 가점을 미리 확인하세요.</div></div>
+      <div class="faq-item"><button class="faq-q">아크로리버스카이 분양가는 어느 정도인가요?</button><div class="faq-a">아크로리버스카이는 한강변 프리미엄 입지로, 분양가는 서울 상위 가격대로 책정될 전망입니다. 정확한 분양가는 2026년 4월 모집공고 시 확정됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">입주 예정 시기는 언제인가요?</button><div class="faq-a">아크로리버스카이의 입주 예정 시기는 분양 후 약 3년이며, 정확한 시기는 시행사 공지를 확인하세요.</div></div>
+      <div class="faq-item"><button class="faq-q">중도금 대출은 가능한가요?</button><div class="faq-a">중도금 대출은 시행사와 협약된 금융기관을 통해 분양가의 60%까지 가능합니다. 고가 단지 대출 한도 규제에 유의하시고, 구체적 조건은 계약 시 안내됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q">전매 제한 기간은 얼마나 되나요?</button><div class="faq-a">서울 소재 단지로 투기과열지구 해당 시 소유권 이전 등기일까지 전매가 제한됩니다. 정확한 전매 제한 조건은 모집공고를 확인하세요.</div></div>
+    </div>
+
+    <!-- Alert -->
+    <div class="widget">
+      <div class="widget-title"><span class="widget-icon">🔔</span> 아크로리버스카이 가격 변동 알림</div>
+      <p style="font-size:0.9rem;color:#666;margin-bottom:12px;">이메일을 등록하면 분양가 변동, 청약 일정 등 최신 소식을 알려드립니다.</p>
+      <div class="alert-box">
+        <input type="email" id="alertEmail" placeholder="이메일 주소 입력">
+        <button id="alertBtn">알림 등록</button>
+      </div>
+      <div class="alert-msg" id="alertMsg"></div>
+    </div>
+
     <div class="detail-sidebar">
       <h3>관련 아파트분양 현장</h3>
       <ul class="related-list">
