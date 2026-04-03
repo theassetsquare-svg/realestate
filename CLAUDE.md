@@ -4,6 +4,11 @@
 - base: "/" ONLY. BrowserRouter ONLY. No # in URL
 - 부동산분양 현장명 FIRST in title. Primary keyword = 부동산분양 현장명. No "더에셋스퀘어"!
 - Primary+Sub keyword density 1.5-2.5%
+## KEYWORD DENSITY RULES — MANDATORY
+- [Primary] Property name (현장명). [Sub] Region + 6 types (아파트/오피스텔/상가/지식산업센터/토지/산업단지)
+- [Density] Primary+Sub 1.5-2.5%. Sub keywords each 1-3x naturally
+- [Schema] JSON-LD per page. [Canonical] No duplicate content. Page similarity under 10%
+- If density is NOT 1.5-2.5% = DON'T move to next task! Fix first!
 - Mobile: 16px, 1.7 line-height, 44px touch
 - useEffect cleanup. persistSession:true. ErrorBoundary
 - Expert bestseller writing. No AI text. Supabase search internal
