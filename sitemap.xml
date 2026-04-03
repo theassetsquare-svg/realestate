@@ -7,16 +7,21 @@
   <url><loc>/knowledge.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>/land.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>/industrial.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>/detail/seoul-one-ipark.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/hauterre-banpo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/thesharp-singil.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/raemian-ellavine.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/thesharp-freella.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/acrod-seocho.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/laclache-xi-defyne.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/gongdeok-xi-rene.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/jangwi-prugio-markone.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/hanwha-forena-dangri.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/changwon-xi-thesky.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>/detail/siheung-hoban-summit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/seoul-one-ipark.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/hauterre-banpo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/thesharp-singil.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/raemian-ellavine.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/thesharp-freella.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/acrod-seocho.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/laclache-xi-defyne.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/gongdeok-xi-rene.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/jangwi-prugio-markone.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/hanwha-forena-dangri.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/changwon-xi-thesky.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/siheung-hoban-summit.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/thesharp-freella.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/acro-riversky.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/summit-thehill.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/deoksugung-lottecastle.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>/property/harrington-oryong.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
