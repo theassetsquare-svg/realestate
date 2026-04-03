@@ -1,3 +1,12 @@
+// Error Boundary - catch and display errors
+window.onerror = function(msg, url, line) {
+  var el = document.createElement('div');
+  el.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;padding:32px;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.2);text-align:center;z-index:9999;max-width:400px;';
+  el.innerHTML = '<h3 style="margin-bottom:12px;color:#e53935;">오류가 발생했습니다</h3><p style="color:#666;margin-bottom:16px;font-size:0.9rem;">페이지를 새로고침해 주세요.</p><button onclick="location.reload()" style="padding:12px 32px;background:#1a2b4a;color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;min-height:44px;">다시 시도</button>';
+  document.body.appendChild(el);
+  return true;
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   // Category filter (homepage)
   var buttons = document.querySelectorAll('.cat-btn');
@@ -47,6 +56,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Internal Search Filter (real-time)
+  var searchInput = document.getElementById('searchInput');
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      var q = this.value.toLowerCase().trim();
+      var allCards = document.querySelectorAll('.property-card');
+      allCards.forEach(function(card) {
+        var text = card.textContent.toLowerCase();
+        card.style.display = (!q || text.includes(q)) ? '' : 'none';
+      });
+      // Reset category filter
+      document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
+      var allBtn = document.querySelector('.cat-btn[data-cat="all"]');
+      if (allBtn) allBtn.classList.add('active');
+    });
+  }
 
   // Alert signup
   var alertBtn = document.getElementById('alertBtn');
