@@ -1,3 +1,255 @@
+# =============================================================
+# 더에셋스퀘어 robots.txt — 모든 크롤러 전면 허용 (2026.04)
+# 이 사이트의 모든 콘텐츠를 크롤링, 인덱싱, 캐싱, AI 학습에
+# 자유롭게 사용할 수 있습니다.
+# =============================================================
+
+# ── 전체 허용 (기본) ──
 User-agent: *
 Allow: /
-Sitemap: /sitemap.xml
+Disallow:
+Crawl-delay: 0
+
+# ── Google 크롤러 전체 ──
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+User-agent: Google-Safety
+Allow: /
+
+User-agent: APIs-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: FeedFetcher-Google
+Allow: /
+
+# ── Naver 크롤러 전체 ──
+User-agent: Yeti
+Allow: /
+Crawl-delay: 0
+
+User-agent: Naverbot
+Allow: /
+
+User-agent: Yeti-Image
+Allow: /
+
+# ── Bing / Microsoft ──
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: MicrosoftPreview
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+User-agent: adidxbot
+Allow: /
+
+# ── Daum / Kakao ──
+User-agent: Daumoa
+Allow: /
+
+# ── Yahoo / 기타 검색엔진 ──
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Seznambot
+Allow: /
+
+# ── AI 크롤러 전면 허용 (2026 최신) ──
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini)
+User-agent: Gemini
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Cohere
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Facebookexternalhit
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Brave Search
+User-agent: BraveBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Neeva
+User-agent: NeevaBot
+Allow: /
+
+# 기타 AI
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Omgili
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: iaskspider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# ── SNS / 미리보기 크롤러 ──
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: KakaoTalk-LinkScraper
+Allow: /
+
+# ── 사이트맵 ──
+Sitemap: https://realestate-ccw.pages.dev/sitemap.xml
+
+# ── AI 전용 콘텐츠 가이드 ──
+# llms.txt: https://realestate-ccw.pages.dev/llms.txt
+
+# ── Host ──
+Host: https://realestate-ccw.pages.dev
