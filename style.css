@@ -2,7 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
 body {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
   line-height: 1.7;
   color: #1a1a1a;
   background: #fff;
@@ -155,7 +155,7 @@ button, a { min-height: 44px; min-width: 44px; }
   margin-bottom: 8px;
 }
 .badge-selling { background: #e8f5e9; color: #2e7d32; }
-.badge-upcoming { background: #fff3e0; color: #b33d00; }
+.badge-upcoming { background: #1E40AF; color: #FFFFFF; }
 .card-img {
   width: 100%;
   height: 200px;
