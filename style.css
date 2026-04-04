@@ -138,14 +138,21 @@ button, a { min-height: 44px; min-width: 44px; }
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 24px;
 }
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  transition: transform .2s, box-shadow .2s;
+}
+.card-link:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.1); }
 .property-card {
   background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 16px;
   overflow: hidden;
-  transition: transform .2s, box-shadow .2s;
 }
-.property-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.1); }
+.property-card:hover { }
 .card-badge {
   display: inline-block;
   padding: 4px 10px;
@@ -265,43 +272,34 @@ button, a { min-height: 44px; min-width: 44px; }
   z-index: 200;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 -4px 16px rgba(0,0,0,.2);
 }
 .bottom-bar .bar-call {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 14px 16px;
-  background: #e53935;
+  gap: 8px;
+  height: 44px;
+  background: #111;
   color: #fff;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 900;
   text-align: center;
-  min-height: 44px;
-  transition: background .2s;
+  text-decoration: none;
 }
-.bottom-bar .bar-call:hover { background: #c62828; }
-.bottom-bar .bar-email {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: #fff;
-}
+.bottom-bar .bar-call:hover { background: #333; }
 .bottom-bar .bar-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 16px;
-  background: #1565c0;
+  height: 48px;
+  background: #2563EB;
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
-  min-height: 44px;
-  transition: background .2s;
+  text-decoration: none;
 }
-.bottom-bar .bar-main:hover { background: #0d47a1; }
-body { padding-bottom: 100px; }
+.bottom-bar .bar-main:hover { background: #1d4ed8; }
+body { padding-bottom: 92px; }
 
 /* ===== Detail Page ===== */
 .detail-hero {
