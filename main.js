@@ -67,24 +67,171 @@ document.addEventListener('DOMContentLoaded', function() {
         var text = card.textContent.toLowerCase();
         card.style.display = (!q || text.includes(q)) ? '' : 'none';
       });
-      // Reset category filter
       document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
       var allBtn = document.querySelector('.cat-btn[data-cat="all"]');
       if (allBtn) allBtn.classList.add('active');
     });
   }
 
-  // Alert signup
-  var alertBtn = document.getElementById('alertBtn');
-  if (alertBtn) {
-    alertBtn.addEventListener('click', function() {
-      var email = document.getElementById('alertEmail').value;
-      var msg = document.getElementById('alertMsg');
-      if (email && email.includes('@')) {
-        msg.style.display = 'block';
-        msg.textContent = '✓ ' + email + ' 등록 완료! 가격 변동 시 알림을 보내드립니다.';
-        document.getElementById('alertEmail').value = '';
+  // ===== Interactive Checklist =====
+  document.querySelectorAll('.check-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      this.classList.toggle('checked');
+      var box = this.querySelector('.check-box');
+      box.textContent = this.classList.contains('checked') ? '✓' : '';
+      updateChecklistProgress();
+    });
+  });
+
+  function updateChecklistProgress() {
+    var total = document.querySelectorAll('.check-item').length;
+    var checked = document.querySelectorAll('.check-item.checked').length;
+    var progressText = document.querySelector('.checklist-progress');
+    var progressFill = document.querySelector('.progress-fill');
+    if (progressText && total > 0) {
+      var pct = Math.round((checked / total) * 100);
+      progressText.firstChild.textContent = checked + '/' + total + ' 완료 (' + pct + '%)';
+      if (progressFill) progressFill.style.width = pct + '%';
+      if (pct === 100) {
+        progressText.firstChild.textContent = '모든 준비 완료! 분양 상담을 시작하세요';
       }
+    }
+  }
+
+  // ===== Compare Feature (Homepage) =====
+  var compareList = [];
+  var MAX_COMPARE = 3;
+  var compareTray = document.getElementById('compareTray');
+  var compareModal = document.getElementById('compareModal');
+
+  document.querySelectorAll('.compare-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var name = this.getAttribute('data-name');
+      var href = this.getAttribute('data-href');
+      var location = this.getAttribute('data-location');
+      var cat = this.getAttribute('data-type');
+
+      if (this.classList.contains('active')) {
+        // Remove from compare
+        compareList = compareList.filter(function(item) { return item.name !== name; });
+        this.classList.remove('active');
+        this.textContent = '⚖ 비교함에 담기';
+      } else {
+        if (compareList.length >= MAX_COMPARE) {
+          alert('최대 ' + MAX_COMPARE + '개까지 비교할 수 있습니다.');
+          return;
+        }
+        compareList.push({ name: name, href: href, location: location, cat: cat });
+        this.classList.add('active');
+        this.textContent = '✓ 비교함에 담김';
+      }
+      updateCompareTray();
+    });
+  });
+
+  function updateCompareTray() {
+    if (!compareTray) return;
+    if (compareList.length === 0) {
+      compareTray.classList.remove('show');
+      return;
+    }
+    compareTray.classList.add('show');
+    var slots = compareTray.querySelectorAll('.compare-tray-slot');
+    slots.forEach(function(slot, i) {
+      if (compareList[i]) {
+        slot.classList.add('filled');
+        slot.innerHTML = compareList[i].name + '<button class="remove-item" data-idx="' + i + '">✕</button>';
+      } else {
+        slot.classList.remove('filled');
+        slot.innerHTML = '비어있음';
+      }
+    });
+    // Bind remove buttons
+    compareTray.querySelectorAll('.remove-item').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var idx = parseInt(this.getAttribute('data-idx'));
+        var removed = compareList[idx];
+        compareList.splice(idx, 1);
+        // Deactivate the toggle button
+        document.querySelectorAll('.compare-toggle').forEach(function(t) {
+          if (t.getAttribute('data-name') === removed.name) {
+            t.classList.remove('active');
+            t.textContent = '⚖ 비교함에 담기';
+          }
+        });
+        updateCompareTray();
+      });
+    });
+    var compareBtn = compareTray.querySelector('.compare-tray-btn');
+    if (compareBtn) {
+      compareBtn.disabled = compareList.length < 2;
+    }
+  }
+
+  // Close compare tray
+  var trayClose = document.getElementById('compareTrayClose');
+  if (trayClose) {
+    trayClose.addEventListener('click', function() {
+      compareTray.classList.remove('show');
+    });
+  }
+
+  // Open compare modal
+  var compareStartBtn = document.getElementById('compareStartBtn');
+  if (compareStartBtn) {
+    compareStartBtn.addEventListener('click', function() {
+      if (compareList.length < 2) return;
+      showCompareModal();
+    });
+  }
+
+  function showCompareModal() {
+    if (!compareModal) return;
+    var tbody = compareModal.querySelector('.compare-modal-body');
+    if (!tbody) return;
+    // Build comparison table
+    var headers = '<tr><th>항목</th>';
+    compareList.forEach(function(item) {
+      headers += '<th class="highlight">' + item.name + '</th>';
+    });
+    headers += '</tr>';
+
+    var rows = [
+      { label: '위치', key: 'location' },
+      { label: '유형', key: 'cat' }
+    ];
+    var rowsHtml = '';
+    rows.forEach(function(row) {
+      rowsHtml += '<tr><td>' + row.label + '</td>';
+      compareList.forEach(function(item) {
+        rowsHtml += '<td>' + (item[row.key] || '-') + '</td>';
+      });
+      rowsHtml += '</tr>';
+    });
+    // Link row
+    rowsHtml += '<tr><td>상세보기</td>';
+    compareList.forEach(function(item) {
+      rowsHtml += '<td><a href="' + item.href + '" style="color:#1a2b4a;font-weight:700;">상세 보기 →</a></td>';
+    });
+    rowsHtml += '</tr>';
+
+    tbody.innerHTML = headers + rowsHtml;
+    compareModal.classList.add('show');
+  }
+
+  // Close compare modal
+  var modalClose = document.getElementById('compareModalClose');
+  if (modalClose) {
+    modalClose.addEventListener('click', function() {
+      compareModal.classList.remove('show');
+    });
+  }
+  if (compareModal) {
+    compareModal.addEventListener('click', function(e) {
+      if (e.target === compareModal) compareModal.classList.remove('show');
     });
   }
 });

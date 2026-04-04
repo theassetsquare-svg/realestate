@@ -1,7 +1,7 @@
 # TheAssetSquare Sub — Single Property Site
 ## MUST
 - DELETE all shared content pools! Write UNIQUE content for EACH venue! Time does not matter! SEO is #1!
-- Plain HTML site. No React. No Vite. Simple HTML+CSS+JS only
+- Plain HTML site. Sub-site purpose = drive ALL traffic to main site https://man-tjn.pages.dev/ ! No email forms on sub-site! No alert signup on sub-site! Everything links to main site! favicon.ico in root folder! No React. No Vite. Simple HTML+CSS+JS only
 - 부동산분양 현장명 FIRST in title. Primary keyword = 부동산분양 현장명. No "더에셋스퀘어"!
 - Primary+Sub keyword density 1.5-2.5%
 - Mobile: 16px, 1.7 line-height, 44px touch
@@ -50,7 +50,7 @@ Google/Naver/AI search for 대표키워드 OR 서브키워드 = must show on pag
 - title: Property name + sub + hook. Under 60 chars
 - meta: 150 chars. H1+H2 property name 3+ times
 - Schema JSON-LD RealEstateAgent. og:image real property
-- sitemap.xml + robots.txt + llms.txt. Core Web Vitals
+- robots.txt Allow ALL bots! NO Disallow! sitemap.xml list ALL pages! llms.txt for AI search! + llms.txt. Core Web Vitals
 - E-E-A-T: expert tone. Canonical URL. NEVER duplicate title/content across domains!. og:image 1200x1200 (1:1) every page!
 
 - NEVER use shared content pools! Write UNIQUE 1000+ chars per venue! Takes time = OK! SEO = #1 priority!
