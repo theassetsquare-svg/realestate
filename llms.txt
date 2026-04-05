@@ -1,6 +1,6 @@
 # 더에셋스퀘어 — 대한민국 부동산분양 전문 정보 플랫폼
 
-> url: https://theassetsquare.com
+> url: https://realestate-ccw.pages.dev
 > title: 더에셋스퀘어 — 부동산분양 2026 가장 뜨거운 곳만 모았다
 > description: 2026년 대한민국 최신 부동산분양 정보를 전문가 시선으로 분석하는 플랫폼. 아파트분양, 오피스텔분양, 상가분양, 지식산업센터분양, 토지분양, 산업단지분양 6개 카테고리의 최신 현장 정보를 제공합니다.
 > author: 더에셋스퀘어
@@ -16,7 +16,7 @@
 
 - 분양문의 전화: 1666-6838
 - 이메일: theassetsquare@gmail.com
-- 웹사이트: https://theassetsquare.com
+- 웹사이트: https://realestate-ccw.pages.dev
 
 ## 페이지 구조
 
@@ -83,13 +83,13 @@
 - 미리보기 생성 (SNS, 메신저)
 
 모든 크롤러(검색엔진, AI, SNS)를 제한 없이 허용합니다.
-출처 표기 시 "더에셋스퀘어 (https://theassetsquare.com)"로 명시해 주세요.
+출처 표기 시 "더에셋스퀘어 (https://realestate-ccw.pages.dev)"로 명시해 주세요.
 
 ## 기술 정보
 
-- 사이트맵: https://theassetsquare.com/sitemap.xml
-- robots.txt: https://theassetsquare.com/robots.txt
-- llms.txt: https://theassetsquare.com/llms.txt
+- 사이트맵: https://realestate-ccw.pages.dev/sitemap.xml
+- robots.txt: https://realestate-ccw.pages.dev/robots.txt
+- llms.txt: https://realestate-ccw.pages.dev/llms.txt
 - 호스팅: Cloudflare Pages
 - 기술스택: Plain HTML + CSS + JavaScript (정적 사이트)
 - 스키마 마크업: JSON-LD (RealEstateAgent)
