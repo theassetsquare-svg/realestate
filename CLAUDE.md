@@ -1,7 +1,7 @@
 # TheAssetSquare Sub — Single Property Site
 ## MUST
 - DELETE all shared content pools! Write UNIQUE content for EACH venue! Time does not matter! SEO is #1!
-- Plain HTML site. Sub-site purpose = drive ALL traffic to main site https://man-tjn.pages.dev/ ! No email forms on sub-site! No alert signup on sub-site! Everything links to main site! favicon.ico in root folder! No React. No Vite. Simple HTML+CSS+JS only
+- Plain HTML site. Sub-site purpose = drive ALL traffic to main site https://theassetsquare.com/ ! No email forms on sub-site! No alert signup on sub-site! Everything links to main site! favicon.ico in root folder! No React. No Vite. Simple HTML+CSS+JS only
 - 부동산분양 현장명 FIRST in title. Primary keyword = 부동산분양 현장명. No "더에셋스퀘어"!
 - Primary+Sub keyword density 1.5-2.5%
 - Mobile: 16px, 1.7 line-height, 44px touch

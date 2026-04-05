@@ -246,10 +246,10 @@ User-agent: KakaoTalk-LinkScraper
 Allow: /
 
 # ── 사이트맵 ──
-Sitemap: https://realestate-ccw.pages.dev/sitemap.xml
+Sitemap: https://theassetsquare.com/sitemap.xml
 
 # ── AI 전용 콘텐츠 가이드 ──
-# llms.txt: https://realestate-ccw.pages.dev/llms.txt
+# llms.txt: https://theassetsquare.com/llms.txt
 
 # ── Host ──
-Host: https://realestate-ccw.pages.dev
+Host: https://theassetsquare.com
