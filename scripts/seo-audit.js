@@ -53,6 +53,7 @@ function listHtml() {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
       if (e.name.startsWith('.')) continue;            // skip hidden tool dirs
       if (e.name === 'node_modules' || e.name === 'scripts') continue;
+      if (e.name === '404.html') continue;             // utility page (noindex), not a content page
       const p = path.join(dir, e.name);
       if (e.isDirectory()) walk(p);
       else if (e.name.endsWith('.html')) out.push(p);
