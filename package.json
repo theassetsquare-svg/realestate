@@ -1,0 +1,14 @@
+{
+  "name": "theassetsquare-sub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TheAssetSquare 서브사이트 — 정적 부동산분양 사이트. SEO 자동 감사 + OG 이미지 생성 툴 포함.",
+  "scripts": {
+    "audit": "node scripts/seo-audit.js",
+    "audit:json": "node scripts/seo-audit.js --json",
+    "og": "node scripts/gen-og.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}

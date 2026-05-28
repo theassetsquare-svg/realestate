@@ -1,0 +1,68 @@
+name: SEO 자동 감사 (24h)
+
+# 매일 자동 + 모든 push + 수동 실행. 정적 사이트라 상주 서버 대신
+# 클라우드 크론으로 키워드 스터핑·중복 제목·메타·canonical·OG·구조화데이터를 감시한다.
+on:
+  schedule:
+    - cron: '0 18 * * *'   # 매일 03:00 KST (UTC 18:00)
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: SEO 감사 실행 (스터핑/중복/메타/OG/스키마)
+        id: audit
+        run: node scripts/seo-audit.js --json
+
+      - name: 리포트 아티팩트 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-report
+          path: seo-report.json
+          if-no-files-found: ignore
+
+      - name: 실패 시 이슈 자동 생성/갱신
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'SEO 자동 감사 실패 — 점검 필요';
+            const body = [
+              '데일리 SEO 감사에서 ERROR가 감지되었습니다.',
+              '',
+              `- 실행: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              '- `seo-report.json` 아티팩트에서 상세 내역을 확인하세요.',
+              '',
+              '확인 항목: 키워드 스터핑(대표키워드 >3.5%), 중복 제목/설명, canonical 도메인, og:image, JSON-LD, viewport.'
+            ].join('\n');
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'seo-audit'
+            });
+            if (open.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: open[0].number, body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['seo-audit']
+              });
+            }

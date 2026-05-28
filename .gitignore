@@ -1,3 +1,5 @@
 .env
 .deploy-token
 .secrets
+node_modules/
+seo-report.json
