@@ -27,6 +27,8 @@ const PRIMARY_MIN = 1.0;    // below = too thin (WARN)
 const PRIMARY_MAX = 2.5;    // above = WARN (CLAUDE.md target ceiling)
 const PRIMARY_STUFF = 3.5;  // primary keyword above this = ERROR (real stuffing)
 const FRAGMENT_HARD = 5.0;  // bare "분양" fragment safety net (ERROR)
+const WORD_STUFF = 5.0;     // any single repeated word above this = stuffing (ERROR)
+const WORD_WARN = 4.0;      // 4–5% = investigate (WARN); topical category nouns can hit ~3.7%
 const TITLE_MAX = 60;       // chars
 const DESC_MIN = 80;
 const DESC_MAX = 170;
@@ -87,6 +89,29 @@ function density(text, kw) {
   return { count: n, pct: +(((n * kw.length) / text.length) * 100).toFixed(2) };
 }
 
+// Bare-word stuffing detector: groups space-tokens by root (strips common Korean
+// particles) and returns the single most-repeated word + its density. Catches
+// over-repetition of a plain noun (e.g. 지식산업센터, 오피스텔) that the phrase-level
+// primary-keyword check would miss.
+const WORD_JOSA = ['으로서','으로써','에서는','에서','으로','이라는','이라고','입니다','습니다','합니다','됩니다','까지','부터','보다','마다','처럼','은','는','이','가','을','를','의','에','도','와','과','로','만'];
+const WORD_STOP = new Set(['그리고','하지만','또한','있는','있습니다','없는','위해','통해','대한','가장','매우','모두','직접','바로','한곳']);
+function topWord(text) {
+  const total = text.replace(/\s/g, '').length || 1;
+  const freq = {};
+  for (const raw of text.split(' ')) {
+    let t = raw.replace(/[^가-힣a-zA-Z0-9]/g, '');
+    for (const j of WORD_JOSA) if (t.length > j.length + 1 && t.endsWith(j)) { t = t.slice(0, -j.length); break; }
+    if (t.length < 2 || WORD_STOP.has(t) || /^[0-9]+$/.test(t)) continue;
+    freq[t] = (freq[t] || 0) + 1;
+  }
+  let best = { word: '', count: 0, pct: 0 };
+  for (const [w, c] of Object.entries(freq)) {
+    const pct = +(((c * w.length) / total) * 100).toFixed(2);
+    if (pct > best.pct) best = { word: w, count: c, pct };
+  }
+  return best;
+}
+
 function analyze(file) {
   const html = fs.readFileSync(file, 'utf8');
   const rel = path.relative(ROOT, file);
@@ -107,11 +132,12 @@ function analyze(file) {
   for (const kw of KEYWORDS_TRACKED) dens[kw] = density(text, kw);
   const primary = resolvePrimary(rel, html, h1s);
   const primaryDensity = density(text, primary);
+  const top = topWord(text);
 
   return {
     file: rel, title, desc, canonical, ogImage, ogTitle, hasJsonLd,
     h1: h1s, h1count: h1s.length, h2count, viewport, charLen, density: dens,
-    primary, primaryDensity,
+    primary, primaryDensity, topWord: top,
   };
 }
 
@@ -156,6 +182,10 @@ function main() {
     // Fragment safety net
     if (p.density['분양'].pct > FRAGMENT_HARD)
       add('ERROR', p.file, `"분양" 단편 과다 ${p.density['분양'].pct}% (안전한계 ${FRAGMENT_HARD}%)`);
+    // Bare-word stuffing (any single repeated word)
+    const tw = p.topWord;
+    if (tw && tw.pct > WORD_STUFF) add('ERROR', p.file, `단어 스터핑 "${tw.word}" ${tw.pct}% (${tw.count}회, 한계 ${WORD_STUFF}%)`);
+    else if (tw && tw.pct > WORD_WARN) add('WARN', p.file, `반복 단어 "${tw.word}" ${tw.pct}% (>${WORD_WARN}%)`);
   }
 
   const errors = issues.filter(i => i.sev === 'ERROR');
@@ -171,7 +201,8 @@ function main() {
     const bn = p.density['분양'];
     console.log(`${p.file}`);
     console.log(`  title(${p.title ? p.title.length : 0}): ${p.title || '—'}`);
-    console.log(`  desc(${p.desc ? p.desc.length : 0})  대표 "${p.primary}" ${p.primaryDensity.pct}%(${p.primaryDensity.count})  분양frag ${bn.pct}%  H1:${p.h1count} H2:${p.h2count}  text:${p.charLen}자`);
+    const tw = p.topWord || { word: '', pct: 0 };
+    console.log(`  desc(${p.desc ? p.desc.length : 0})  대표 "${p.primary}" ${p.primaryDensity.pct}%(${p.primaryDensity.count})  분양frag ${bn.pct}%  최다단어 "${tw.word}" ${tw.pct}%  H1:${p.h1count} H2:${p.h2count}`);
   }
   console.log(`\n--- 이슈: ERROR ${errors.length} / WARN ${warns.length} ---`);
   for (const i of [...errors, ...warns]) console.log(`  [${i.sev}] ${i.file} :: ${i.msg}`);
