@@ -56,6 +56,6 @@ Google/Naver/AI search for 대표키워드 OR 서브키워드 = must show on pag
 - NEVER use shared content pools! Write UNIQUE 1000+ chars per venue! Takes time = OK! SEO = #1 priority!
 - Time does not matter! Write UNIQUE 1000+ chars per venue! SEO > speed!
 ## NEVER
-- NEVER use fake phone numbers! NEVER use placeholder data! Only REAL advertiser phone numbers! No number = leave empty!
+- NEVER put ANY phone number ANYWHERE — 광고주번호 포함 전화번호 자체 금지! No tel: links. 모든 연락 → 메인사이트 https://theassetsquare.com/ 링크만!
 - Auto page transition. Next.js. Change URLs
 - Brand path. Stuffing. Fake properties. Completed sales
