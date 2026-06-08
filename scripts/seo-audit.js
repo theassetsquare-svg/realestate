@@ -166,6 +166,14 @@ function contentGateIssues(html, vtext) {
   if (/시세\s*대비[^<]{0,40}(차익|억\s*원?\s*이상)/.test(scan))
     out.push('미검증 시세차익 표현(출처 없음) — 제거/완화');
 
+  // (5) 내부링크 .html (라이브 308 1홉 유발) — 클린 URL로 통일
+  const htmlLink = html.match(/href=["']\/(?:property\/)?[a-z0-9-]+\.html["']/i);
+  if (htmlLink) out.push(`내부링크 .html (308 유발): ${htmlLink[0]} — 클린 URL 사용`);
+
+  // (6) JSON-LD url/item 에 .html
+  if (/"(?:url|item)":\s*["'][^"']*\.html["']/.test(html))
+    out.push('JSON-LD url/item 에 .html — 클린 URL 사용');
+
   // (4) 만료 청약을 현재형/미래형으로 노출 (오늘 기준)
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const Y = today.getFullYear();
@@ -239,7 +247,17 @@ function main() {
 
     // ── 2단계 콘텐츠 무결성 게이트 (깨진카드·과장·시세차익·신선도) ──
     for (const g of contentGateIssues(p.rawHtml, p.vtext)) add('ERROR', p.file, g);
+
+    // ── 3단계: 상세 페이지 BreadcrumbList JSON-LD 필수 ──
+    if (p.file.startsWith('property/') && !/"@type":\s*"BreadcrumbList"/.test(p.rawHtml))
+      add('ERROR', p.file, 'BreadcrumbList JSON-LD 누락 (홈>카테고리>현장)');
   }
+
+  // ── 3단계: sitemap.xml 은 클린 URL만 (.html 금지) ──
+  try {
+    const sm = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+    if (/<loc>[^<]*\.html<\/loc>/.test(sm)) add('ERROR', 'sitemap.xml', 'sitemap <loc> 에 .html — 클린 URL 사용');
+  } catch (e) { /* sitemap 없으면 스킵 */ }
 
   const errors = issues.filter(i => i.sev === 'ERROR');
   const warns = issues.filter(i => i.sev === 'WARN');
