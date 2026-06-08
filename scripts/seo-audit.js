@@ -147,6 +147,8 @@ function analyze(file) {
 // 과장(로또/역대급/초프리미엄)·미검증 시세차익·만료 청약 현재형/미래형 노출을 차단.
 // 날짜 비교는 실행 시각(CI 매일 실행) 기준 — 하드코딩 아님.
 const HYPE_WORDS = ['무료', '체험', '로또', '역대급', '초프리미엄'];
+// 실 listing(상세 페이지) 없는 카테고리 — 정직 본진 CTA 필수, 가짜 listing 금지
+const EMPTY_CATS = ['commercial.html', 'officetel.html', 'industrial.html', 'land.html', 'knowledge.html'];
 function contentGateIssues(html, vtext) {
   const out = [];
   const scan = html
@@ -173,6 +175,14 @@ function contentGateIssues(html, vtext) {
   // (6) JSON-LD url/item 에 .html
   if (/"(?:url|item)":\s*["'][^"']*\.html["']/.test(html))
     out.push('JSON-LD url/item 에 .html — 클린 URL 사용');
+
+  // (7) 내부링크 새 탭 (내부는 같은 탭, 본진 외부링크만 _blank 유지)
+  for (const t of (html.match(/<a\b[^>]*>/gi) || [])) {
+    const h = t.match(/href=["']([^"']*)["']/);
+    if (h && (h[1].startsWith('/') || h[1].startsWith('#')) && /target=["']_blank["']/.test(t)) {
+      out.push('내부링크 새 탭(target=_blank) — 같은 탭 사용'); break;
+    }
+  }
 
   // (4) 만료 청약을 현재형/미래형으로 노출 (오늘 기준)
   const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -251,6 +261,26 @@ function main() {
     // ── 3단계: 상세 페이지 BreadcrumbList JSON-LD 필수 ──
     if (p.file.startsWith('property/') && !/"@type":\s*"BreadcrumbList"/.test(p.rawHtml))
       add('ERROR', p.file, 'BreadcrumbList JSON-LD 누락 (홈>카테고리>현장)');
+
+    // ── 4단계: 상세 막다른길 (상세→상세 크로스링크 < 3) ──
+    if (p.file.startsWith('property/')) {
+      const self = p.file.split('/')[1].replace('.html', '');
+      const outs = new Set([...p.rawHtml.matchAll(/href=["']\/property\/([a-z0-9-]+)["']/gi)]
+        .map(m => m[1]).filter(s => s !== self));
+      if (outs.size < 3) add('ERROR', p.file, `상세→상세 크로스링크 ${outs.size}개 (<3, 막다른길)`);
+    }
+
+    // ── 4단계: 빈 카테고리(상가/오피스텔/산업단지/토지/지식산업센터) 본진 전체보기 CTA 필수 ──
+    if (EMPTY_CATS.includes(p.file) && !/class=["']notice-cta["']/.test(p.rawHtml))
+      add('ERROR', p.file, '빈 카테고리 본진 전체보기 CTA(notice-cta) 누락 — 정직 보강 필요');
+  }
+
+  // ── 4단계: 상세 고아(inbound 0) — 다른 페이지에서 들어오는 링크 없음 ──
+  for (const pf of pages.filter(p => p.file.startsWith('property/'))) {
+    const slug = pf.file.split('/')[1].replace('.html', '');
+    const needle = `href="/property/${slug}"`;
+    const inbound = pages.filter(p => p.file !== pf.file && p.rawHtml.includes(needle)).length;
+    if (inbound === 0) add('ERROR', pf.file, '고아 상세 (inbound 0)');
   }
 
   // ── 3단계: sitemap.xml 은 클린 URL만 (.html 금지) ──
