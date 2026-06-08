@@ -678,4 +678,19 @@ body { padding-bottom: 96px; }
   .floorplan-card { flex: 0 0 180px; }
   .compare-tray { bottom: 110px; }
   .alert-teaser { flex-direction: column; text-align: center; }
+  .related-grid { grid-template-columns: 1fr; }
+}
+
+/* 모바일 가로 오버플로 방지 + 보조텍스트 가독성 (360~480px) */
+@media (max-width: 480px) {
+  /* 하단 고정바: 긴 이메일/CTA 텍스트가 좁은 화면을 넘지 않도록 축소·줄바꿈 허용 */
+  div[style*="z-index:9999"] { height: auto !important; min-height: 48px; padding: 6px 10px; }
+  div[style*="z-index:9999"] a { font-size: 13px !important; line-height: 1.35; text-align: center; white-space: normal; word-break: break-word; }
+  body { padding-bottom: 120px; }
+  .hero h1 { font-size: 1.35rem; }
+  .section-title { font-size: 1.3rem; }
+  .card-desc { font-size: 0.95rem; }      /* 14.7→15.2px 가독성 */
+  .card-location, .related-loc { font-size: 0.88rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-num { font-size: 1.6rem; }
 }

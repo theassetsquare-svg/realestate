@@ -1,0 +1,73 @@
+name: 매일 자동생성 (청약홈 연동)
+
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 매일 06:00 KST (UTC 21:00)
+  workflow_dispatch:        # 수동 실행 허용
+
+permissions:
+  contents: write           # 생성물 커밋/푸시 (GITHUB_TOKEN)
+
+concurrency:
+  group: daily-generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 청약홈 fetch → SSOT 병합 (신규 현장·6종 카테고리)
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}   # 사장님 1회 액션: 시크릿 등록
+        run: node scripts/applyhome.js
+
+      - name: 생성 (만료 자동종료·신규 페이지·sitemap/lastmod)
+        run: node scripts/generate.js
+
+      - name: 게이트 (SEO 감사 — ERROR 시 배포 차단)
+        run: node scripts/seo-audit.js
+
+      - name: 변경 커밋 & 푸시
+        id: commit
+        run: |
+          git config user.name "theassetsquare-bot"
+          git config user.email "theassetsquare@gmail.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "auto: 청약홈 일일 동기화 ($(date -u +%Y-%m-%d))"
+            git push
+            echo "pushed=1" >> "$GITHUB_OUTPUT"
+            git diff --name-only HEAD~1 HEAD | grep -E '^property/|^(apt|officetel|commercial|industrial|land|knowledge)' \
+              | sed 's#^#https://realestate-ccw.pages.dev/#; s#\.html$##' > changed_urls.txt || true
+          else
+            echo "변경 없음 — 커밋 생략"
+            echo "pushed=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: IndexNow 색인 통보 (변경 시)
+        if: steps.commit.outputs.pushed == '1'
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}        # 사장님 1회 액션: 시크릿 + /{KEY}.txt
+        run: |
+          [ -s changed_urls.txt ] && node scripts/indexnow.js $(cat changed_urls.txt) || true
+
+      # 실패 시에만 메일 (성공 메일 0). MAIL_USERNAME/MAIL_PASSWORD 시크릿 필요(사장님 1회 액션).
+      - name: 실패 알림 메일
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: '[더에셋스퀘어] 일일 자동생성 실패'
+          to: theassetsquare@gmail.com
+          from: 더에셋스퀘어 자동화
+          body: '청약홈 일일 동기화 워크플로가 실패했습니다. Actions 로그를 확인하세요.'

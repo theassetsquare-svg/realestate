@@ -184,6 +184,12 @@ function contentGateIssues(html, vtext) {
     }
   }
 
+  // (8) 반응형: 인라인 고정폭 width ≥600px (max-width 제외) = 모바일 가로 오버플로 위험
+  for (const m of scan.matchAll(/style=["']([^"']*)["']/gi)) {
+    const w = m[1].match(/(?:^|[^-])width:\s*(\d{3,})px/);
+    if (w && +w[1] >= 600) { out.push(`가로 오버플로 위험: 고정 width ${w[1]}px — 반응형 단위(%/max-width) 사용`); break; }
+  }
+
   // (4) 만료 청약을 현재형/미래형으로 노출 (오늘 기준)
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const Y = today.getFullYear();
