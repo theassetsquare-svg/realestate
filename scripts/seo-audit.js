@@ -138,7 +138,57 @@ function analyze(file) {
     file: rel, title, desc, canonical, ogImage, ogTitle, hasJsonLd,
     h1: h1s, h1count: h1s.length, h2count, viewport, charLen, density: dens,
     primary, primaryDensity, topWord: top,
+    rawHtml: html, vtext: text,
   };
+}
+
+// ── 2단계 콘텐츠 무결성 게이트 ──────────────────────────────────────────────
+// 재발 방지: 본진 home行 광고카드(오인 막다른길)·절대규칙 금지어(무료/체험)·
+// 과장(로또/역대급/초프리미엄)·미검증 시세차익·만료 청약 현재형/미래형 노출을 차단.
+// 날짜 비교는 실행 시각(CI 매일 실행) 기준 — 하드코딩 아님.
+const HYPE_WORDS = ['무료', '체험', '로또', '역대급', '초프리미엄'];
+function contentGateIssues(html, vtext) {
+  const out = [];
+  const scan = html
+    .replace(/<!--[\s\S]*?-->/g, ' ')          // 주석 제외
+    .replace(/<script[\s\S]*?<\/script>/gi, ' '); // 스크립트(JSON-LD 등) 제외 — 제목/메타/본문은 유지
+
+  // (1) 본진 home으로 가는 '현장 광고 카드'(card-link로 카드 전체를 감쌈) = 오인 막다른길
+  if (/<a\b[^>]*href=["']https?:\/\/theassetsquare\.com\/?["'][^>]*class=["']card-link["']/i.test(html) ||
+      /<a\b[^>]*class=["']card-link["'][^>]*href=["']https?:\/\/theassetsquare\.com\/?["']/i.test(html))
+    out.push('본진 home行 광고 카드(card-link) — 오인 막다른길. 상세링크 or 제거, 콘텐츠 유지 시 card-cta 버튼으로 전환');
+
+  // (2) 절대규칙 금지어 + 과장 (제목/메타/본문, 주석·스크립트 제외)
+  for (const w of HYPE_WORDS)
+    if (scan.includes(w)) out.push(`금지어 "${w}" — 절대규칙/과장 위반`);
+
+  // (3) 미검증 시세차익 ("주변 시세 대비 N억 차익" 류, 출처 없음)
+  if (/시세\s*대비[^<]{0,40}(차익|억\s*원?\s*이상)/.test(scan))
+    out.push('미검증 시세차익 표현(출처 없음) — 제거/완화');
+
+  // (4) 만료 청약을 현재형/미래형으로 노출 (오늘 기준)
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const Y = today.getFullYear();
+  let m;
+  // 4a. 활성 배지 "청약접수 M.D~M.D" 의 마감일이 과거
+  const reBadge = /청약접수\s*(\d{1,2})\.(\d{1,2})\s*~\s*(\d{1,2})\.(\d{1,2})/g;
+  while ((m = reBadge.exec(vtext))) {
+    const end = new Date(Y, (+m[3]) - 1, +m[4]);
+    if (end < today) out.push(`만료 청약 현재형 배지: "${m[0]}" (마감 ${m[3]}/${m[4]})`);
+  }
+  // 4b. "YYYY년 M월 … 분양/청약 예정·시작·접수중" 의 해당 월이 과거
+  const reYM = /(20\d\d)\s*년\s*(\d{1,2})\s*월[^<。]{0,18}(분양|청약)[^<。]{0,6}(예정|시작|접수\s*중)/g;
+  while ((m = reYM.exec(vtext))) {
+    const end = new Date(+m[1], +m[2], 0); // 해당 월 말일
+    if (end < today) out.push(`만료 분양/청약 미래형: "${m[0].slice(0, 24)}…"`);
+  }
+  // 4c. "M월 D일 … 청약/접수 예정·시작·중" 의 날짜가 과거(연도 미표기 → 올해)
+  const reMD = /(\d{1,2})\s*월\s*(\d{1,2})\s*일[^<。]{0,15}(청약|접수)[^<。]{0,6}(예정|시작|중)/g;
+  while ((m = reMD.exec(vtext))) {
+    const end = new Date(Y, (+m[1]) - 1, +m[2]);
+    if (end < today) out.push(`만료 청약일 현재/미래형: "${m[0].slice(0, 24)}…"`);
+  }
+  return out;
 }
 
 function main() {
@@ -186,14 +236,19 @@ function main() {
     const tw = p.topWord;
     if (tw && tw.pct > WORD_STUFF) add('ERROR', p.file, `단어 스터핑 "${tw.word}" ${tw.pct}% (${tw.count}회, 한계 ${WORD_STUFF}%)`);
     else if (tw && tw.pct > WORD_WARN) add('WARN', p.file, `반복 단어 "${tw.word}" ${tw.pct}% (>${WORD_WARN}%)`);
+
+    // ── 2단계 콘텐츠 무결성 게이트 (깨진카드·과장·시세차익·신선도) ──
+    for (const g of contentGateIssues(p.rawHtml, p.vtext)) add('ERROR', p.file, g);
   }
 
   const errors = issues.filter(i => i.sev === 'ERROR');
   const warns = issues.filter(i => i.sev === 'WARN');
 
   if (process.argv.includes('--json')) {
+    // rawHtml/vtext 는 게이트 검사용 내부 필드 — 리포트에서 제외
+    const slim = pages.map(({ rawHtml, vtext, ...rest }) => rest);
     fs.writeFileSync(path.join(ROOT, 'seo-report.json'),
-      JSON.stringify({ generated: new Date().toISOString(), pageCount: pages.length, pages, issues }, null, 2));
+      JSON.stringify({ generated: new Date().toISOString(), pageCount: pages.length, pages: slim, issues }, null, 2));
   }
 
   console.log(`\n=== SEO 감사: ${pages.length}개 페이지 ===\n`);

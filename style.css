@@ -166,6 +166,21 @@ a:focus-visible, button:focus-visible { box-shadow: 0 0 0 4px #1a2b4a, 0 0 0 6px
   transition: transform .2s, box-shadow .2s;
 }
 .card-link:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.1); }
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  margin: 4px 20px 20px;
+  padding: 11px 18px;
+  background: #1a2b4a;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  min-height: 44px;
+  transition: background .2s;
+}
+.card-cta:hover { background: #24406e; }
 .property-card {
   background: #fff;
   border: 1px solid #e8e8e8;
