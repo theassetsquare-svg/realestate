@@ -5,7 +5,7 @@
  * canonical clean·og PNG 1200²·RealEstateListing+BreadcrumbList·내부 같은탭·본진 0홉 CTA.
  * 추정치 금지: SSOT에 값이 있는 필드만 렌더한다(없으면 생략). per-수치 출처 표기.
  */
-const HOST = 'https://realestate-ccw.pages.dev';
+const HOST = 'https://k.nolcool.com';
 const MAIN = 'https://theassetsquare.com/';
 const CAT_KO = { apt: '아파트분양', officetel: '오피스텔분양', commercial: '상가분양',
   industrial: '산업단지분양', land: '토지분양', knowledge: '지식산업센터분양' };

@@ -18,7 +18,7 @@ const { renderPropertyPage, CAT_PATH } = require('./lib/template');
 
 const ROOT = path.resolve(__dirname, '..');
 const SSOT = path.join(ROOT, 'data', 'listings.json');
-const HOST = 'https://realestate-ccw.pages.dev';
+const HOST = 'https://k.nolcool.com';
 const DRY = process.argv.includes('--dry');
 const TODAY = new Date(); TODAY.setHours(0, 0, 0, 0);
 const ymd = (d) => d.toISOString().slice(0, 10);

@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const CANONICAL_HOST = 'https://realestate-ccw.pages.dev'; // sub-site self-canonical (matches sitemap)
+const CANONICAL_HOST = 'https://k.nolcool.com'; // sub-site self-canonical (matches sitemap)
 const MAIN_SITE = 'https://theassetsquare.com'; // traffic destination
 
 // Density thresholds (CLAUDE.md: primary+sub keyword density 1.5–2.5%).
