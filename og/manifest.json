@@ -1,0 +1,1284 @@
+{
+ "1.png": {
+  "file": "1.png",
+  "url": "https://k.nolcool.com/og/1.png",
+  "venue": "신림그랑프리나이트",
+  "drawn": [
+   "신림그랑프리나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21246,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "2.png": {
+  "file": "2.png",
+  "url": "https://k.nolcool.com/og/2.png",
+  "venue": "불광동호박나이트",
+  "drawn": [
+   "불광동호박나이트",
+   "손흥민",
+   "010-2221-1937",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 25008,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 203,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 103,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "3.png": {
+  "file": "3.png",
+  "url": "https://k.nolcool.com/og/3.png",
+  "venue": "강서호박나이트",
+  "drawn": [
+   "강서호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22036,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "4.png": {
+  "file": "4.png",
+  "url": "https://k.nolcool.com/og/4.png",
+  "venue": "영등포터미널나이트",
+  "drawn": [
+   "영등포터미널나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21288,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "5.png": {
+  "file": "5.png",
+  "url": "https://k.nolcool.com/og/5.png",
+  "venue": "청담나이트",
+  "drawn": [
+   "청담나이트",
+   "펩시맨",
+   "010-5655-4866",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 25279,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 137,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 200,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 96,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "6.png": {
+  "file": "6.png",
+  "url": "https://k.nolcool.com/og/6.png",
+  "venue": "답십리미라클나이트",
+  "drawn": [
+   "답십리미라클나이트",
+   "유재석",
+   "010-8156-6558",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 26388,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 76,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 203,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 99,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "7.png": {
+  "file": "7.png",
+  "url": "https://k.nolcool.com/og/7.png",
+  "venue": "상봉동한국관나이트",
+  "drawn": [
+   "상봉동한국관나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22190,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "8.png": {
+  "file": "8.png",
+  "url": "https://k.nolcool.com/og/8.png",
+  "venue": "노원호박나이트",
+  "drawn": [
+   "노원호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21279,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "9.png": {
+  "file": "9.png",
+  "url": "https://k.nolcool.com/og/9.png",
+  "venue": "수유샴푸나이트",
+  "drawn": [
+   "수유샴푸나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21449,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "10.png": {
+  "file": "10.png",
+  "url": "https://k.nolcool.com/og/10.png",
+  "venue": "독산동국빈관나이트",
+  "drawn": [
+   "독산동국빈관나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21190,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "11.png": {
+  "file": "11.png",
+  "url": "https://k.nolcool.com/og/11.png",
+  "venue": "길동찬스나이트",
+  "drawn": [
+   "길동찬스나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21993,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "12.png": {
+  "file": "12.png",
+  "url": "https://k.nolcool.com/og/12.png",
+  "venue": "의정부백악관나이트",
+  "drawn": [
+   "의정부백악관나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22075,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "13.png": {
+  "file": "13.png",
+  "url": "https://k.nolcool.com/og/13.png",
+  "venue": "의정부한국관나이트",
+  "drawn": [
+   "의정부한국관나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22064,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "14.png": {
+  "file": "14.png",
+  "url": "https://k.nolcool.com/og/14.png",
+  "venue": "구리호박나이트",
+  "drawn": [
+   "구리호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 20844,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "15.png": {
+  "file": "15.png",
+  "url": "https://k.nolcool.com/og/15.png",
+  "venue": "파주야당스카이돔나이트",
+  "drawn": [
+   "파주야당스카이돔나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22263,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 61,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "16.png": {
+  "file": "16.png",
+  "url": "https://k.nolcool.com/og/16.png",
+  "venue": "일산샴푸나이트",
+  "drawn": [
+   "일산샴푸나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21535,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "17.png": {
+  "file": "17.png",
+  "url": "https://k.nolcool.com/og/17.png",
+  "venue": "성남샴푸나이트",
+  "drawn": [
+   "성남샴푸나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21651,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "18.png": {
+  "file": "18.png",
+  "url": "https://k.nolcool.com/og/18.png",
+  "venue": "인덕원국빈관나이트",
+  "drawn": [
+   "인덕원국빈관나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21390,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "19.png": {
+  "file": "19.png",
+  "url": "https://k.nolcool.com/og/19.png",
+  "venue": "수원코리아나이트",
+  "drawn": [
+   "수원코리아나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21960,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "20.png": {
+  "file": "20.png",
+  "url": "https://k.nolcool.com/og/20.png",
+  "venue": "수원찬스돔나이트",
+  "drawn": [
+   "수원찬스돔나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21754,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "21.png": {
+  "file": "21.png",
+  "url": "https://k.nolcool.com/og/21.png",
+  "venue": "오산호박나이트",
+  "drawn": [
+   "오산호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21653,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "22.png": {
+  "file": "22.png",
+  "url": "https://k.nolcool.com/og/22.png",
+  "venue": "안산히트나이트",
+  "drawn": [
+   "안산히트나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21574,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "23.png": {
+  "file": "23.png",
+  "url": "https://k.nolcool.com/og/23.png",
+  "venue": "부천고래나이트",
+  "drawn": [
+   "부천고래나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 20980,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "24.png": {
+  "file": "24.png",
+  "url": "https://k.nolcool.com/og/24.png",
+  "venue": "인천아라비안나이트",
+  "drawn": [
+   "인천아라비안나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21856,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "25.png": {
+  "file": "25.png",
+  "url": "https://k.nolcool.com/og/25.png",
+  "venue": "평택호박나이트",
+  "drawn": [
+   "평택호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21452,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "26.png": {
+  "file": "26.png",
+  "url": "https://k.nolcool.com/og/26.png",
+  "venue": "천안스타돔나이트",
+  "drawn": [
+   "천안스타돔나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21495,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "27.png": {
+  "file": "27.png",
+  "url": "https://k.nolcool.com/og/27.png",
+  "venue": "천안코리아나이트",
+  "drawn": [
+   "천안코리아나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21985,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "28.png": {
+  "file": "28.png",
+  "url": "https://k.nolcool.com/og/28.png",
+  "venue": "청주호박나이트",
+  "drawn": [
+   "청주호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22006,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "29.png": {
+  "file": "29.png",
+  "url": "https://k.nolcool.com/og/29.png",
+  "venue": "서산호박나이트",
+  "drawn": [
+   "서산호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21607,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "30.png": {
+  "file": "30.png",
+  "url": "https://k.nolcool.com/og/30.png",
+  "venue": "대전원나이트",
+  "drawn": [
+   "대전원나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21658,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 114,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "31.png": {
+  "file": "31.png",
+  "url": "https://k.nolcool.com/og/31.png",
+  "venue": "대전세븐나이트",
+  "drawn": [
+   "대전세븐나이트",
+   "영탁",
+   "010-7770-0869",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 25860,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 300,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 98,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "32.png": {
+  "file": "32.png",
+  "url": "https://k.nolcool.com/og/32.png",
+  "venue": "대구호박나이트",
+  "drawn": [
+   "대구호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 20877,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "33.png": {
+  "file": "33.png",
+  "url": "https://k.nolcool.com/og/33.png",
+  "venue": "구미호박나이트",
+  "drawn": [
+   "구미호박나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 20756,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "34.png": {
+  "file": "34.png",
+  "url": "https://k.nolcool.com/og/34.png",
+  "venue": "울산뉴월드나이트",
+  "drawn": [
+   "울산뉴월드나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21241,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "35.png": {
+  "file": "35.png",
+  "url": "https://k.nolcool.com/og/35.png",
+  "venue": "울산챔피언나이트",
+  "drawn": [
+   "울산챔피언나이트",
+   "춘자",
+   "010-5653-0069",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 26978,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 85,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 296,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 96,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "36.png": {
+  "file": "36.png",
+  "url": "https://k.nolcool.com/og/36.png",
+  "venue": "창원룰루랄라나이트",
+  "drawn": [
+   "창원룰루랄라나이트",
+   "로또",
+   "010-7528-4936",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 23476,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 76,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 247,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 98,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "37.png": {
+  "file": "37.png",
+  "url": "https://k.nolcool.com/og/37.png",
+  "venue": "부산아시아드나이트",
+  "drawn": [
+   "부산아시아드나이트",
+   "새우깡",
+   "010-3614-1056",
+   "광고문의 카톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 26813,
+  "hero": "phone",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 75,
+    "pct": 0.6
+   },
+   "nick": {
+    "w": 566,
+    "h": 196,
+    "pct": 0.52
+   },
+   "phone": {
+    "w": 1023,
+    "h": 100,
+    "pct": 0.94
+   },
+   "ad": {
+    "w": 598,
+    "h": 57,
+    "pct": 0.55
+   }
+  }
+ },
+ "38.png": {
+  "file": "38.png",
+  "url": "https://k.nolcool.com/og/38.png",
+  "venue": "광주상무나이트",
+  "drawn": [
+   "광주상무나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 22293,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "39.png": {
+  "file": "39.png",
+  "url": "https://k.nolcool.com/og/39.png",
+  "venue": "광주첨단나이트",
+  "drawn": [
+   "광주첨단나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21857,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 97,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ },
+ "40.png": {
+  "file": "40.png",
+  "url": "https://k.nolcool.com/og/40.png",
+  "venue": "제주도나이트",
+  "drawn": [
+   "제주도나이트",
+   "광고문의",
+   "카카오톡 besta12"
+  ],
+  "width": 1200,
+  "height": 1200,
+  "bytes": 21315,
+  "hero": "ad",
+  "rows": {
+   "name": {
+    "w": 653,
+    "h": 113,
+    "pct": 0.6
+   },
+   "hero": {
+    "w": 870,
+    "h": 245,
+    "pct": 0.8
+   },
+   "kakao": {
+    "w": 816,
+    "h": 125,
+    "pct": 0.75
+   }
+  }
+ }
+}
