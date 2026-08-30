@@ -246,6 +246,17 @@ User-agent: KakaoTalk-LinkScraper
 Allow: /
 
 # ── 사이트맵 ──
+
+# 공식 문서로 확인된 크롤러
+User-agent: Claude-SearchBot
+Allow: /
+# 공식 문서로 확인된 크롤러
+User-agent: Claude-User
+Allow: /
+# 공식 문서로 확인된 크롤러
+User-agent: Perplexity-User
+Allow: /
+
 Sitemap: https://k.nolcool.com/sitemap.xml
 
 # ── AI 전용 콘텐츠 가이드 ──
