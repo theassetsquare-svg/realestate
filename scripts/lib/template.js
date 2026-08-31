@@ -9,8 +9,8 @@ const HOST = 'https://k.nolcool.com';
 const MAIN = 'https://theassetsquare.com/';
 const CAT_KO = { apt: '아파트분양', officetel: '오피스텔분양', commercial: '상가분양',
   industrial: '산업단지분양', land: '토지분양', knowledge: '지식산업센터분양' };
-const CAT_PATH = { apt: '/apt', officetel: '/officetel', commercial: '/commercial',
-  industrial: '/industrial', land: '/land', knowledge: '/knowledge' };
+const CAT_PATH = { apt: '/apt/', officetel: '/officetel/', commercial: '/commercial/',
+  industrial: '/industrial/', land: '/land/', knowledge: '/knowledge/' };
 
 const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -26,8 +26,8 @@ function statusLabel(l, today) {
 }
 
 function headerNav(active) {
-  const items = [['/', '홈'], ['/apt', '아파트분양'], ['/officetel', '오피스텔분양'],
-    ['/commercial', '상가분양'], ['/knowledge', '지식산업센터'], ['/land', '토지분양'], ['/industrial', '산업단지']];
+  const items = [['/', '홈'], ['/apt/', '아파트분양'], ['/officetel/', '오피스텔분양'],
+    ['/commercial/', '상가분양'], ['/knowledge/', '지식산업센터'], ['/land/', '토지분양'], ['/industrial/', '산업단지']];
   return `<header class="header"><div class="container"><div class="header-logo"><a href="/">더에셋<span>스퀘어</span></a></div><nav class="header-nav">` +
     items.map(([h, t]) => `<a href="${h}"${h === active ? ' class="active"' : ''}>${t}</a>`).join('') +
     `</nav></div></header>`;
