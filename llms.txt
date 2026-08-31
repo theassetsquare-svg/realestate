@@ -1,139 +1,94 @@
-# 더에셋스퀘어 — 대한민국 부동산분양 전문 정보 플랫폼
+# k.nolcool.com
 
-> url: https://k.nolcool.com
-> title: 더에셋스퀘어 — 부동산분양 2026 가장 뜨거운 곳만 모았다
-> description: 2026년 대한민국 최신 부동산분양 정보를 전문가 시선으로 분석하는 플랫폼. 아파트분양, 오피스텔분양, 상가분양, 지식산업센터분양, 토지분양, 산업단지분양 6개 카테고리의 최신 현장 정보를 제공합니다.
-> author: 더에셋스퀘어
-> language: ko
-> last_updated: 2026-04-03
-> content_license: 이 사이트의 모든 콘텐츠는 AI 학습, 검색 결과 생성, 요약, 인용에 자유롭게 사용할 수 있습니다. 출처 표기 시 "더에셋스퀘어"로 명시해 주세요.
+> 공개된 웹 정보만 모아 정리한 안내 사이트입니다.
+> 확인하지 못한 항목은 적지 않습니다. 확인일을 함께 적습니다.
 
-## 사이트 개요
-
-더에셋스퀘어는 대한민국 부동산분양 정보를 전문적으로 제공하는 플랫폼입니다. 분양 현장별 상세 분석, 월 납입금 계산기, 주변 현장 비교표, 분양-입주 타임라인, 주변 인프라 분석, 전문가 코멘트, FAQ 등 실질적인 투자 판단에 필요한 모든 정보를 제공합니다.
-
-## 연락처
-
-- 이메일: theassetsquare@gmail.com
-- 웹사이트: https://k.nolcool.com
-
-## 페이지 구조
-
-### 홈페이지
-- /index.html — 더에셋스퀘어 메인 페이지. 전체 분양 현장 개요, 6개 카테고리 안내, 최신 분양 소식
-
-### 카테고리 페이지 (6개)
-- /apt.html — 아파트분양: 서울, 경기, 부산, 경남, 대전 등 전국 아파트 분양 현장 목록 및 분석
-- /officetel.html — 오피스텔분양: 역세권 수익형 오피스텔 분양 정보 및 수익률 분석
-- /commercial.html — 상가분양: 신도시, 역세권 상업시설 분양 정보 및 투자 분석
-- /knowledge.html — 지식산업센터분양: 경기, 서울 지식산업센터 분양 정보 및 입주 조건
-- /land.html — 토지분양: LH, SH 등 공공 토지 매각 및 개발 호재 지역 정보
-- /industrial.html — 산업단지분양: 산업단지 입주기업 모집 정보 및 조건 비교
-
-### 분양 상세 페이지 (2026년 4월 기준, 실제 검증 완료)
-
-#### 서울 아파트분양
-- /property/seoul-one-ipark.html — 서울원아이파크: 서울 용산구, HDC현대산업개발, 대규모 분양, 용산 개발 호재 수혜
-- /property/hauterre-banpo.html — 오티에르반포: 서울 서초구 반포동, 86세대, 강남 핵심 입지, 4.10~4.15 청약
-- /property/thesharp-singil.html — 더샵신길센트럴시티: 서울 영등포구, 포스코이앤씨, 477세대, 신길뉴타운
-- /property/raemian-ellavine.html — 래미안엘라비네: 서울, 삼성물산, 브랜드 대단지
-- /property/thesharp-freella.html — 더샵프리엘라: 서울, 포스코이앤씨, 역세권 분양
-- /property/acrod-seocho.html — 아크로드서초: 서울 서초구, 56세대, 소규모 프리미엄
-- /property/laclache-xi-defyne.html — 라클라체자이드파인: 서울, GS건설, 2026년 4월 분양예정
-- /property/acro-riversky.html — 아크로리버스카이: 서울, DL이앤씨, 한강 조망, 2026년 4월 분양예정
-- /property/gongdeok-xi-rene.html — 공덕역자이르네: 서울 마포구, GS건설, 쿼드러플 역세권
-- /property/jangwi-prugio-markone.html — 장위푸르지오마크원: 서울 성북구, 대우건설, 대단지 재개발
-- /property/summit-thehill.html — 써밋더힐: 서울, 2026년 4월 분양예정, 파노라마 조망 특화
-- /property/deoksugung-lottecastle.html — 덕수궁롯데캐슬136: 서울 중구, 롯데건설, 도심 최중심 프리미엄
-- /property/ichon-leuel.html — 이촌 르엘: 서울 용산구 이촌동, 롯데건설, 88세대, 분양가 25.9~33억, 4.9~4.14 청약
-
-#### 수도권 아파트분양
-- /property/uijeongbu-central-ipark.html — 의정부역 센트럴 아이파크: 경기 의정부시, HDC현대산업개발, 556세대, GTX-C 역세권
-- /property/siheung-hoban-summit.html — 시흥거모호반써밋: 경기 시흥시, 호반건설, 거모지구 신도시
-
-#### 지방 아파트분양
-- /property/hanwha-forena-dangri.html — 한화포레나부산당리: 부산 사하구, 한화건설, 209세대, 역세권
-- /property/changwon-xi-thesky.html — 창원자이더스카이: 경남 창원시, GS건설, 509세대, 대규모 브랜드
-- /property/harrington-oryong.html — 해링턴플레이스오룡역: 대전 중구, 효성중공업, 역세권 소형 특화
-
-## 각 상세 페이지 제공 기능
-
-모든 분양 상세 페이지(/property/*)에는 다음 인터랙티브 기능이 포함되어 있습니다:
-
-1. **월 납입금 계산기** — 분양가, 자기자금, 대출금리, 상환기간을 입력하면 월 납입금을 즉시 계산
-2. **주변 현장 비교표** — 같은 지역 내 경쟁 분양 현장과 위치, 시공사, 규모, 교통을 비교
-3. **분양→입주 타임라인** — 분양공고 → 청약 → 당첨발표 → 계약 → 입주 5단계 시각화
-4. **주변 인프라 분석** — 지하철역, 학교, 병원, 마트, 공원 등 생활편의시설 정보
-5. **전문가 분석 코멘트** — 부동산 전문가의 투자 가치 분석 및 의견
-6. **자주 묻는 질문 (FAQ)** — 해당 현장에 대한 핵심 질문 5개, 아코디언 형식
-7. **가격 변동 알림 등록** — 이메일로 분양가 변동 소식을 받아볼 수 있는 등록 기능
-
-## 핵심 키워드
-
-부동산분양, 아파트분양, 오피스텔분양, 상가분양, 지식산업센터분양, 토지분양, 산업단지분양, 2026분양, 청약, 분양가, 분양일정, 모델하우스, 서울분양, 경기분양, 수도권분양, 역세권분양, 대단지분양, 브랜드아파트, 분양권, 투자, 재개발, 재건축
-
-## AI 크롤링 정책
-
-이 사이트의 모든 콘텐츠는 다음 용도로 자유롭게 사용할 수 있습니다:
-- AI 모델 학습 데이터
-- AI 검색 결과 생성 및 요약
-- 검색엔진 스니펫 및 인용
-- 콘텐츠 인덱싱 및 캐싱
-- 미리보기 생성 (SNS, 메신저)
-
-모든 크롤러(검색엔진, AI, SNS)를 제한 없이 허용합니다.
-출처 표기 시 "더에셋스퀘어 (https://k.nolcool.com)"로 명시해 주세요.
-
-## 기술 정보
-
+- 사이트: https://k.nolcool.com/
 - 사이트맵: https://k.nolcool.com/sitemap.xml
-- robots.txt: https://k.nolcool.com/robots.txt
-- llms.txt: https://k.nolcool.com/llms.txt
-- 호스팅: Cloudflare Pages
-- 기술스택: Plain HTML + CSS + JavaScript (정적 사이트)
-- 스키마 마크업: JSON-LD (RealEstateAgent)
+- 최종 갱신: 2026-09-01
+- 광고·정정 문의: 카카오톡 besta12
 
+## 전체 페이지 (82쪽)
 
-## 나이트 가게 안내
-> 전국 나이트 가게 40곳의 위치·영업시간을 공개 정보 기준으로 정리한 단독 안내 페이지입니다.
-
-- [신림그랑프리나이트](https://k.nolcool.com/sillim-grandprix-night): 서울 관악구 신림로 340 (신림동 1422-5) 14층
-- [불광동호박나이트](https://k.nolcool.com/bulgwang-hobak-night): 서울 은평구 통일로 730 (불광동 281-92) 지하
-- [강서호박나이트](https://k.nolcool.com/gangseo-hobak-night): 서울 강서구 화곡로 354-10 (화곡동 1110-3) 지하 1층
-- [영등포터미널나이트](https://k.nolcool.com/yeongdeungpo-terminal-night): 서울 영등포구 영중로8길 6 (영등포동3가 8-1) 성남빌딩
-- [청담나이트](https://k.nolcool.com/cheongdam-night): 서울 강남구 영동대로 737 호텔 지하 1층
-- [답십리미라클나이트](https://k.nolcool.com/dapsimni-miracle-night): 서울 동대문구 고미술로 99
-- [상봉동한국관나이트](https://k.nolcool.com/sangbong-hangukgwan-night): 서울 중랑구 망우로 326 (상봉동 128-91) 2층
-- [노원호박나이트](https://k.nolcool.com/nowon-hobak-night): 서울 노원구 노해로 456 (상계동 734-5)
-- [수유샴푸나이트](https://k.nolcool.com/suyu-shampoo-night): 서울 강북구 도봉로 308 (번동 449-1) 지하 1~2층
-- [독산동국빈관나이트](https://k.nolcool.com/doksan-gukbingwan-night): 서울 금천구 범안로 1209 (독산동 293-5) 일대
-- [길동찬스나이트](https://k.nolcool.com/gildong-chance-night): 서울 강동구 천호대로 1135 지하 1층
-- [의정부백악관나이트](https://k.nolcool.com/uijeongbu-baekakgwan-night): 경기 의정부시 태평로 104 (의정부동 26-4) 경복빌딩
-- [의정부한국관나이트](https://k.nolcool.com/uijeongbu-hangukgwan-night): 경기 의정부시 의정부동 157-7 (엘마트 2층)
-- [구리호박나이트](https://k.nolcool.com/guri-hobak-night): 경기 구리시 안골로 105 (수택동 424-21) 은산빌딩 지하 1층
-- [파주야당스카이돔나이트](https://k.nolcool.com/paju-skydome-night): 경기 파주시 소리천로 25 (야당동 1083)
-- [일산샴푸나이트](https://k.nolcool.com/ilsan-shampoo-night): 경기 고양시 일산동구 중앙로 1160 (마두동 805-1)
-- [성남샴푸나이트](https://k.nolcool.com/seongnam-shampoo-night): 경기 성남시 중원구 광명로 21 (성남동 3182)
-- [인덕원국빈관나이트](https://k.nolcool.com/indeogwon-gukbingwan-night): 경기 안양시 동안구 안양판교로 16 (관양동 1505-15)
-- [수원코리아나이트](https://k.nolcool.com/suwon-korea-night): 경기 수원시 팔달구 경수대로 430 (인계동 1016-7)
-- [수원찬스돔나이트](https://k.nolcool.com/suwon-chancedome-night): 경기 수원시 권선구 권선로 673 (권선동 1019-9)
-- [오산호박나이트](https://k.nolcool.com/osan-hobak-night): 경기 오산시 성호대로 130 (원동 811-8) 중앙상가
-- [안산히트나이트](https://k.nolcool.com/ansan-hit-night): 경기 안산시 상록구 상록수로 34 (본오동 874) 지층
-- [부천고래나이트](https://k.nolcool.com/bucheon-gorae-night): 경기 부천시 원미구 중동로248번길 105 (중동 1138-1)
-- [인천아라비안나이트](https://k.nolcool.com/incheon-arabian-night): 인천 계양구 도두리로 14 (작전동 907-2) 맘모스빌딩 4~7층
-- [평택호박나이트](https://k.nolcool.com/pyeongtaek-hobak-night): 경기 평택시 중앙로 16 (평택동 69-8 외) 2~3층
-- [천안스타돔나이트](https://k.nolcool.com/cheonan-stardome-night): 충남 천안시 서북구 성정공원1길 21
-- [천안코리아나이트](https://k.nolcool.com/cheonan-korea-night): 충남 천안시 서북구 차돌들길 7 (쌍용동 210-8)
-- [청주호박나이트](https://k.nolcool.com/cheongju-hobak-night): 충북 청주시 청원구 향군로15번길 9 (우암동 326-20)
-- [서산호박나이트](https://k.nolcool.com/seosan-hobak-night): 충남 서산시 읍내1로 35 (읍내동 144-1) 서부상가 지하 1층 101호
-- [대전원나이트](https://k.nolcool.com/daejeon-one-night): 대전 동구 동서대로1683번길 76-8 (용전동 63-1)
-- [대전세븐나이트](https://k.nolcool.com/daejeon-seven-night): 대전 중구 당디로 112 (유천동 332-28)
-- [대구호박나이트](https://k.nolcool.com/daegu-hobak-night): 대구 북구 칠곡중앙대로 435 지하 1층
-- [구미호박나이트](https://k.nolcool.com/gumi-hobak-night): 경북 구미시 산업로 242 (원평동 1051-4)
-- [울산뉴월드나이트](https://k.nolcool.com/ulsan-newworld-night): 울산 남구 삼산로 375 (삼산동 220-6) 1층
-- [울산챔피언나이트](https://k.nolcool.com/ulsan-champion-night): 울산 남구 정동로 75 (삼산동 1559-17) 1층
-- [창원룰루랄라나이트](https://k.nolcool.com/changwon-lululala-night): 경남 창원시 성산구 상남동 22-4
-- [부산아시아드나이트](https://k.nolcool.com/busan-asiad-night): 부산 동래구 온천장로107번길 32 (온천동 137) 지하 1~2층
-- [광주상무나이트](https://k.nolcool.com/gwangju-sangmu-night): 광주 서구 상무번영로 30 (치평동 1240-8)
-- [광주첨단나이트](https://k.nolcool.com/gwangju-cheomdan-night): 광주 광산구 임방울대로800번길 52 (월계동 887-6) 2층
-- [제주도나이트](https://k.nolcool.com/jeju-night): 제주 제주시 제원1길 14 (연동 251-75)
+- [더에셋스퀘어 — 부동산분양 2026 가장 뜨거운 곳만 모았다](https://k.nolcool.com/)
+- [아파트분양 2026 — 지금 청약 가능한 곳만 모았다](https://k.nolcool.com/apt/)
+- [지역 생활 인프라 안내 — 무엇이 가까운가](https://k.nolcool.com/area/living-infra/)
+- [안산히트나이트 이용 전 궁금한 것 정리](https://k.nolcool.com/club/ansan-hit-night/)
+- [부천고래나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/bucheon-gorae-night/)
+- [불광동호박나이트 이용 안내 열다섯 가지](https://k.nolcool.com/club/bulgwang-hobak-night-2/)
+- [불광동호박나이트 좌석 잡는 법과 연락 방법](https://k.nolcool.com/club/bulgwang-hobak-night-3/)
+- [불광동호박나이트 알아두면 편한 것들 서울 은평구](https://k.nolcool.com/club/bulgwang-hobak-night/)
+- [부산 동래구 부산아시아드나이트 좌석 안내](https://k.nolcool.com/club/busan-asiad-night-2/)
+- [부산광역시 동래구 부산아시아드나이트 기본 안내](https://k.nolcool.com/club/busan-asiad-night-3/)
+- [부산아시아드나이트 이용 전 알아둘 점](https://k.nolcool.com/club/busan-asiad-night/)
+- [창원룰루랄라나이트 방문 계획 세우기](https://k.nolcool.com/club/changwon-lululala-night-2/)
+- [창원룰루랄라나이트 기본 정보와 자주 묻는 질문](https://k.nolcool.com/club/changwon-lululala-night-3/)
+- [창원룰루랄라나이트 자리 종류와 고르는 요령](https://k.nolcool.com/club/changwon-lululala-night/)
+- [천안코리아나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/cheonan-korea-night/)
+- [천안스타돔나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/cheonan-stardome-night/)
+- [청담나이트 좌석·인원·시간 안내](https://k.nolcool.com/club/cheongdam-night-2/)
+- [청담나이트 예약부터 입장까지 순서](https://k.nolcool.com/club/cheongdam-night-3/)
+- [청담나이트 가기 전 준비와 문의처](https://k.nolcool.com/club/cheongdam-night/)
+- [청주호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/cheongju-hobak-night/)
+- [대구호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/daegu-hobak-night/)
+- [대전원나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/daejeon-one-night/)
+- [대전세븐나이트 자리 잡기 전에 볼 것](https://k.nolcool.com/club/daejeon-seven-night-2/)
+- [대전세븐나이트 복장과 신분증 안내](https://k.nolcool.com/club/daejeon-seven-night-3/)
+- [대전세븐나이트 이용 방법 한눈에 대전 중구](https://k.nolcool.com/club/daejeon-seven-night/)
+- [답십리미라클나이트 좌석·인원·시간 안내](https://k.nolcool.com/club/dapsimni-miracle-night-2/)
+- [답십리미라클나이트 알아두면 편한 것들 서울특별시 동대문구](https://k.nolcool.com/club/dapsimni-miracle-night-3/)
+- [답십리미라클나이트 가기 전 준비와 문의처](https://k.nolcool.com/club/dapsimni-miracle-night/)
+- [독산동국빈관나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/doksan-gukbingwan-night/)
+- [강서호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/gangseo-hobak-night/)
+- [길동찬스나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/gildong-chance-night/)
+- [구미호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/gumi-hobak-night/)
+- [구리호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/guri-hobak-night/)
+- [광주첨단나이트, 2층 계단 앞에서 멈춘 이유](https://k.nolcool.com/club/gwangju-cheomdan-night/)
+- [광주상무나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/gwangju-sangmu-night/)
+- [일산샴푸나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/ilsan-shampoo-night/)
+- [인천아라비안나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/incheon-arabian-night/)
+- [인덕원국빈관나이트, 계절을 고를 때의 두 갈래](https://k.nolcool.com/club/indeogwon-gukbingwan-night/)
+- [제주도나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/jeju-night/)
+- [노원호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/nowon-hobak-night/)
+- [오산호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/osan-hobak-night/)
+- [파주야당스카이돔나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/paju-skydome-night/)
+- [평택호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/pyeongtaek-hobak-night/)
+- [상봉동한국관나이트 이용 전 궁금한 것 정리](https://k.nolcool.com/club/sangbong-hangukgwan-night/)
+- [성남샴푸나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/seongnam-shampoo-night/)
+- [서산호박나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/seosan-hobak-night/)
+- [신림그랑프리나이트 인원별 자리 안내](https://k.nolcool.com/club/sillim-grandprix-night/)
+- [수원찬스돔나이트 이용 전 궁금한 것 정리](https://k.nolcool.com/club/suwon-chancedome-night/)
+- [수원코리아나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/suwon-korea-night/)
+- [수유샴푸나이트 방문 준비와 좌석 안내](https://k.nolcool.com/club/suyu-shampoo-night/)
+- [의정부백악관나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/uijeongbu-baekakgwan-night/)
+- [의정부한국관나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/uijeongbu-hangukgwan-night/)
+- [울산챔피언나이트 예약 요령과 자리 안내](https://k.nolcool.com/club/ulsan-champion-night-2/)
+- [울산챔피언나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/ulsan-champion-night-3/)
+- [울산챔피언나이트 이용 안내 열다섯 가지](https://k.nolcool.com/club/ulsan-champion-night/)
+- [울산뉴월드나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/ulsan-newworld-night/)
+- [영등포터미널나이트 안내 — 위치부터 문의까지](https://k.nolcool.com/club/yeongdeungpo-terminal-night/)
+- [상가분양 2026 — 단지내상가·근린상가 투자 핵심만 분석](https://k.nolcool.com/commercial/)
+- [산업단지분양 2026 — 기업 입주 조건 비교 분석](https://k.nolcool.com/industrial/)
+- [지식산업센터분양 2026 — 입주 가능한 곳 총정리](https://k.nolcool.com/knowledge/)
+- [토지분양 2026 — 개발 호재 지역만 엄선](https://k.nolcool.com/land/)
+- [전국 나이트 정리 — 지역별로 찾는 40곳](https://k.nolcool.com/night/)
+- [오피스텔분양 2026 — 수익률 높은 곳만 엄선](https://k.nolcool.com/officetel/)
+- [운영 정책 안내 — k.nolcool.com](https://k.nolcool.com/policy/)
+- [아크로리버스카이 — 서울 한강변 프리미엄 아파트분양](https://k.nolcool.com/property/acro-riversky/)
+- [아크로드서초 — 서초구 하이엔드 랜드마크 아파트분양](https://k.nolcool.com/property/acrod-seocho/)
+- [창원자이더스카이 — 경남 창원 랜드마크 아파트분양](https://k.nolcool.com/property/changwon-xi-thesky/)
+- [덕수궁롯데캐슬136 — 서울 도심 최중심 아파트분양](https://k.nolcool.com/property/deoksugung-lottecastle/)
+- [공덕역자이르네 — 마포구 쿼드러플 역세권 아파트분양](https://k.nolcool.com/property/gongdeok-xi-rene/)
+- [한화포레나부산당리 — 부산 사하구 브랜드 아파트분양](https://k.nolcool.com/property/hanwha-forena-dangri/)
+- [해링턴플레이스오룡역 — 대전 중구 역세권 아파트분양](https://k.nolcool.com/property/harrington-oryong/)
+- [오티에르반포 — 서초구 한강변 프리미엄 아파트분양](https://k.nolcool.com/property/hauterre-banpo/)
+- [이촌 르엘 — 용산구 이촌동 리모델링 프리미엄 아파트분양](https://k.nolcool.com/property/ichon-leuel/)
+- [장위푸르지오마크원 — 성북구 뉴타운 최대 규모 아파트분양](https://k.nolcool.com/property/jangwi-prugio-markone/)
+- [라클라체자이드파인 — GS건설 자이 상위 아파트분양](https://k.nolcool.com/property/laclache-xi-defyne/)
+- [래미안엘라비네 — 삼성물산 프리미엄 아파트분양 분석](https://k.nolcool.com/property/raemian-ellavine/)
+- [서울원아이파크 — 서울 대표 아파트분양 2026 핵심 분석](https://k.nolcool.com/property/seoul-one-ipark/)
+- [시흥거모호반써밋 — 경기 시흥 거모지구 아파트분양](https://k.nolcool.com/property/siheung-hoban-summit/)
+- [써밋더힐 — 서울 조망 특화 프리미엄 아파트분양](https://k.nolcool.com/property/summit-thehill/)
+- [더샵프리엘라 — 포스코이앤씨 혁신 설계 아파트분양](https://k.nolcool.com/property/thesharp-freella/)
+- [더샵신길센트럴시티 — 영등포구 역세권 대단지 아파트분양](https://k.nolcool.com/property/thesharp-singil/)
+- [의정부역 센트럴 아이파크 — GTX-C 역세권 아파트분양](https://k.nolcool.com/property/uijeongbu-central-ipark/)
