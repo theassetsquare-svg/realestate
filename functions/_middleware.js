@@ -11,7 +11,7 @@
  *   · 경로·쿼리는 그대로 유지한다 (/apt.html?a=1 → https://k.nolcool.com/apt.html?a=1)
  *   · 301(영구 이동) — 네이버·구글에 "주소가 완전히 바뀌었다"고 알린다.
  *
- * 위치: 이 폴더는 저장소 최상위에 있어야 한다. Cloudflare Pages 는 프로젝트 루트의
+ * 위치: 이 폴더는 저장소 상위에 있어야 한다. Cloudflare Pages 는 프로젝트 루트의
  *       functions/ 를 읽는다.
  */
 const NEW_HOST = 'k.nolcool.com';
