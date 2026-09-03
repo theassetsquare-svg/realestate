@@ -94,7 +94,7 @@ function renderPropertyPage(l, related, today = new Date()) {
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="https://k.nolcool.com/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <title>${esc(title)}</title>

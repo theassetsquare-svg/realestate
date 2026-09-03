@@ -38,4 +38,9 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
+# 공식 문서로 확인된 크롤러
+User-agent: NaverBot
+Allow: /
+
+
 Sitemap: https://k.nolcool.com/sitemap.xml
