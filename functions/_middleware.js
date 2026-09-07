@@ -16,7 +16,15 @@
  */
 const NEW_HOST = 'k.nolcool.com';
 
+
+/* NW-HIDE-INTERNAL-v1 — 집안 문서는 밖으로 내보내지 않는다(2026-09-07).
+   저장소 뿌리가 곧 배포 뿌리라 /CLAUDE.md · /README.md · /GEMINI.md · /package.json · /skills-lock.json ·
+   /src/….template 이 그대로 200 으로 나가고 있었다. 파일은 그대로 두고 응답만 404 로 막는다. */
+const 집안이름 = ['/claude.md', '/gemini.md', '/agents.md', '/readme.md', '/package.json', '/package-lock.json', '/skills-lock.json'];
+function 집안인가(p) { const q = String(p).toLowerCase(); return 집안이름.includes(q) || q.startsWith(String.fromCharCode(47) + "src" + String.fromCharCode(47)) || q.startsWith(String.fromCharCode(47) + ".env"); }
 export async function onRequest(context) {
+  if (집안인가(new URL(context.request.url).pathname)) return new Response("Not Found", { status: 404, headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex" } });
+
   const url = new URL(context.request.url);
 
   if (url.hostname.endsWith('.pages.dev')) {
