@@ -20,7 +20,7 @@ function statusLabel(l, today) {
   if (l.subscriptionEnd) {
     const end = new Date(l.subscriptionEnd + 'T23:59:59');
     if (end < today) return { text: '청약 접수 마감', cls: 'badge-upcoming' };
-    return { text: `청약 접수 ${l.subscriptionStart | ''}~${l.subscriptionEnd}`.trim(), cls: 'badge-selling' };
+    return { text: `청약 접수 ${l.subscriptionStart || ''}~${l.subscriptionEnd}`.trim(), cls: 'badge-selling' };
   }
   return { text: '분양 단지', cls: 'badge-upcoming' };
 }
@@ -62,7 +62,7 @@ ${cards}
 function renderPropertyPage(l, related, today = new Date()) {
   const kw = CAT_KO[l.category];
   const st = statusLabel(l, today);
-  const title = `${l.name} — ${esc(l.addressLocality.split(' ').slice(-1)[0] | l.region)} ${kw}`.slice(0, 58);
+  const title = `${l.name} — ${esc(l.addressLocality.split(' ').slice(-1)[0] || l.region)} ${kw}`.slice(0, 58);
   const desc = `${l.name} 분양 정보를 전문가가 분석합니다. ${esc(l.addressLocality)} ${l.builder ? l.builder + ' ' : ''}${kw} ${l.name}의 입지·청약 일정·분양 개요를 확인하세요.`.slice(0, 165);
   const og = `${HOST}/og/property-${l.slug}.png`;
   const url = `${HOST}/property/${l.slug}`;
@@ -79,14 +79,15 @@ function renderPropertyPage(l, related, today = new Date()) {
 
   const ld = JSON.stringify({
     '@context': 'https://schema.org', '@type': 'RealEstateListing', name: l.name, url,
-    datePosted: l.datePosted | undefined,
+    datePosted: l.datePosted || undefined,
     address: { '@type': 'PostalAddress', addressLocality: l.addressLocality, addressCountry: 'KR' },
   });
   const crumb = JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: '홈', item: `${HOST}/` },
       { '@type': 'ListItem', position: 2, name: kw, item: `${HOST}${CAT_PATH[l.category]}` },
-      { '@type': 'ListItem', position: 3, name: l.name, item: url }],
+      { '@type': 'ListItem', position: 3, name: l.name, item: url },
+    ],
   });
 
   return `<!DOCTYPE html>

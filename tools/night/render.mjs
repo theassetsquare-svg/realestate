@@ -17,7 +17,7 @@ const KAKAO = 'https://open.kakao.com/o/sBesta12';
 /* ★광고주 정답표 — 유일한 기준. 세트(가게이름+닉네임+번호)로만 쓴다. */
 export const AD = {
   울산챔피언나이트: { nick: '춘자', phone: '010-5653-0069' },
-  창원룰루랄라나이트: { nick: null, phone: null },
+  창원룰루랄라나이트: { nick: '미제휴', phone: '연락처 삭제(미제휴)' },
   불광동호박나이트: { nick: '손흥민', phone: '010-2221-1937' },
   청담나이트: { nick: '펩시맨', phone: '010-5655-4866' },
   대전세븐나이트: { nick: '영탁', phone: '010-7770-0869' },
@@ -30,7 +30,8 @@ const VERIFY = [
   '<meta name="naver-site-verification" content="bdbe793270145676c05362aed730ccf806147f73" />',
   '<meta name="naver-site-verification" content="b831a70c2e9de00029b1472f3b2c0e146ac4bb69" />',
   '<meta name="google-site-verification" content="PmfRK32sSB__iyGIVTwupgP_R45SPUo7QPPtmYJHXIc" />',
-  '<meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />'].join('\n');
+  '<meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />',
+].join('\n');
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const digits = (p) => p.replace(/\D/g, '');
@@ -82,7 +83,7 @@ const factTable = (facts, checked) =>
   '</tbody></table>';
 
 export function renderPage(v, c, today) {
-  const ad = AD[v.name] | null;
+  const ad = AD[v.name] || null;
   /* ★끝에 슬래시를 붙인다. Cloudflare 가 /1 → 308 → /1/ 로 넘기기 때문에
      슬래시 없는 주소를 canonical 로 쓰면 네이버가 리다이렉트를 만난다. */
   const url = `${SITE}/${v.path}/`;
