@@ -22,10 +22,14 @@ const NEW_HOST = 'k.nolcool.com';
    /src/….template 이 그대로 200 으로 나가고 있었다. 파일은 그대로 두고 응답만 404 로 막는다. */
 const 집안이름 = ['/claude.md', '/gemini.md', '/agents.md', '/readme.md', '/package.json', '/package-lock.json', '/skills-lock.json'];
 function 집안인가(p) { const q = String(p).toLowerCase(); return 집안이름.includes(q) || q.startsWith(String.fromCharCode(47) + "src" + String.fromCharCode(47)) || q.startsWith(String.fromCharCode(47) + ".env"); }
+/* [폐기 404 — 시작] state/indexnow-removed.json 에서 도구가 채움. 손으로 고치지 않음 */
+const REMOVED_PATHS = new Set(["/club/bupyeong-kiss-night-1"]);
+/* [폐기 404 — 끝] */
 export async function onRequest(context) {
   if (집안인가(new URL(context.request.url).pathname)) return new Response("Not Found", { status: 404, headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex" } });
 
   const url = new URL(context.request.url);
+  if (REMOVED_PATHS.has(url.pathname.replace(/\/+$/, '') || '/')) { const nf = await context.env.ASSETS.fetch(new URL('/404.html', url.origin)); return new Response(nf.ok ? nf.body : 'Not Found', { status: 404, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } }); } // 폐기 쪽 404(엣지 잔상 차단)
 
   if (url.hostname.endsWith('.pages.dev')) {
     url.protocol = 'https:';
