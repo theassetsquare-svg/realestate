@@ -166,43 +166,6 @@
    }
   }
  },
- "6.png": {
-  "file": "6.png",
-  "url": "https://k.nolcool.com/og/6.png",
-  "venue": "답십리미라클나이트",
-  "drawn": [
-   "답십리미라클나이트",
-   "유재석",
-   "010-8156-6558",
-   "광고문의 카톡 besta12"
-  ],
-  "width": 1200,
-  "height": 1200,
-  "bytes": 26388,
-  "hero": "phone",
-  "rows": {
-   "name": {
-    "w": 653,
-    "h": 76,
-    "pct": 0.6
-   },
-   "nick": {
-    "w": 566,
-    "h": 203,
-    "pct": 0.52
-   },
-   "phone": {
-    "w": 1023,
-    "h": 99,
-    "pct": 0.94
-   },
-   "ad": {
-    "w": 598,
-    "h": 57,
-    "pct": 0.55
-   }
-  }
- },
  "7.png": {
   "file": "7.png",
   "url": "https://k.nolcool.com/og/7.png",
