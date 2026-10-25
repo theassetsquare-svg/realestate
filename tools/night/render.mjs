@@ -16,7 +16,7 @@ const KAKAO = 'https://open.kakao.com/o/sBesta12';
 
 /* ★광고주 정답표 — 유일한 기준. 세트(가게이름+닉네임+번호)로만 쓴다. */
 export const AD = {
-  울산챔피언나이트: { nick: '춘자', phone: '010-5653-0069' },
+  울산챔피언나이트: { nick: null, phone: null },
   창원룰루랄라나이트: { nick: '미제휴', phone: '연락처 삭제(미제휴)' },
   불광동호박나이트: { nick: '손흥민', phone: '010-2221-1937' },
   청담나이트: { nick: '펩시맨', phone: '010-5655-4866' },
@@ -83,7 +83,7 @@ const factTable = (facts, checked) =>
   '</tbody></table>';
 
 export function renderPage(v, c, today) {
-  const ad = AD[v.name] || null;
+  const ad = /\d{3,}/.test(String((AD[v.name] || {}).phone || '')) ? AD[v.name] : null;   /* 번호 없는 칸(해지 null · 미제휴)은 비광고주 */
   /* ★끝에 슬래시를 붙인다. Cloudflare 가 /1 → 308 → /1/ 로 넘기기 때문에
      슬래시 없는 주소를 canonical 로 쓰면 네이버가 리다이렉트를 만난다. */
   const url = `${SITE}/${v.path}/`;

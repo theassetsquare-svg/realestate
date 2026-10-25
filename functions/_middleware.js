@@ -19,9 +19,12 @@ const NEW_HOST = 'k.nolcool.com';
 
 /* NW-HIDE-INTERNAL-v1 — 집안 문서는 밖으로 내보내지 않는다(2026-09-07).
    저장소 뿌리가 곧 배포 뿌리라 /CLAUDE.md · /README.md · /GEMINI.md · /package.json · /skills-lock.json ·
-   /src/….template 이 그대로 200 으로 나가고 있었다. 파일은 그대로 두고 응답만 404 로 막는다. */
+   /src/….template 이 그대로 200 으로 나가고 있었다. 파일은 그대로 두고 응답만 404 로 막는다.
+   NW-HIDE-INTERNAL-v2(2026-10-25): /scripts/·/tools/·/docs/·/skills/·/.claude/ 같은 집안 폴더와 점으로 시작하는 주소도 200 으로 나가고 있었다 — 같이 404(/.well-known/ 은 그대로) · 지운 파일도 404. */
 const 집안이름 = ['/claude.md', '/gemini.md', '/agents.md', '/readme.md', '/package.json', '/package-lock.json', '/skills-lock.json'];
-function 집안인가(p) { const q = String(p).toLowerCase(); return 집안이름.includes(q) || q.startsWith(String.fromCharCode(47) + "src" + String.fromCharCode(47)) || q.startsWith(String.fromCharCode(47) + ".env"); }
+const 집안폴더 = ["src", "scripts", "tools", "skills", "data", "functions"];
+const 지운파일 = [];
+function 집안인가(p) { const q = String(p).toLowerCase(); const 첫 = q.split('/')[1] || ''; if (집안이름.includes(q) || 지운파일.includes(q)) return true; if (q.length > 첫.length + 1 && 집안폴더.includes(첫)) return true; return 첫.length > 1 && 첫.startsWith('.') && 첫 !== '.well-known'; }
 /* [폐기 404 — 시작] state/indexnow-removed.json 에서 도구가 채움. 손으로 고치지 않음 */
 const REMOVED_PATHS = new Set(["/club/bupyeong-kiss-night-2","/club/bupyeong-kiss-night-3","/club/cheongju-hobak-night","/club/daegu-hobak-night","/club/daejeon-one-night","/club/daejeon-one-night-2","/club/doksan-gukbingwan-night","/club/gangseo-hobak-night","/club/gildong-chance-night","/club/gildong-chance-night-3","/club/gumi-hobak-night","/club/guri-hobak-night","/club/ilsan-shampoo-night","/club/ilsan-shampoo-night-3","/club/jeju-night","/club/jeju-night-2","/club/nowon-hobak-night","/club/nowon-hobak-night-3","/club/osan-hobak-night","/club/osan-hobak-night-3","/club/paju-skydome-night","/club/paju-skydome-night-3","/club/pyeongtaek-hobak-night","/club/sangbong-hangukgwan-night","/club/sangbong-hangukgwan-night-3","/club/seosan-hobak-night","/club/sillim-grandprix-night","/club/suwon-chancedome-night","/club/suwon-chancedome-night-3","/club/suwon-korea-night","/club/suyu-shampoo-night","/club/suyu-shampoo-night-3","/club/ulsan-newworld-night","/night"]);
 /* [폐기 404 — 끝] */

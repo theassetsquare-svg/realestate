@@ -1040,43 +1040,6 @@
    }
   }
  },
- "35.png": {
-  "file": "35.png",
-  "url": "https://k.nolcool.com/og/35.png",
-  "venue": "울산챔피언나이트",
-  "drawn": [
-   "울산챔피언나이트",
-   "춘자",
-   "010-5653-0069",
-   "광고문의 카톡 besta12"
-  ],
-  "width": 1200,
-  "height": 1200,
-  "bytes": 26978,
-  "hero": "phone",
-  "rows": {
-   "name": {
-    "w": 653,
-    "h": 85,
-    "pct": 0.6
-   },
-   "nick": {
-    "w": 566,
-    "h": 296,
-    "pct": 0.52
-   },
-   "phone": {
-    "w": 1023,
-    "h": 96,
-    "pct": 0.94
-   },
-   "ad": {
-    "w": 598,
-    "h": 57,
-    "pct": 0.55
-   }
-  }
- },
  "36.png": {
   "file": "36.png",
   "url": "https://k.nolcool.com/og/36.png",
